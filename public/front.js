@@ -15,11 +15,11 @@ function changeColor(obj_id) {
             document.getElementById(obj_id).innerHTML = "Open";
             this.value = "Open";
         }   
-        
+
         const mon8am = document.getElementById('8amMon');
         const monday = db.ref('Monday');
         const dbMon8am = db.ref().child('Monday');
-        monday.child("8am").set(mon8am.value);
+        monday.child("8am").set("TEST");
     }
     //this.value="Lawrence";
     //alert(this.value)
