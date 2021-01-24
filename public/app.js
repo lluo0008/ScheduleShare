@@ -18,7 +18,7 @@ dbMon8am.on('value', snap =>
     mon8am.innerHTML = JSON.stringify(snap.val());
 });
 
-mon8am.addEventListener('click', (e) =>
+mon8am.addEventListener("click", (e) =>
 {
     e.preventDefault();
     monday.child("8am").set(mon8am.value);
