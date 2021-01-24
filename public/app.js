@@ -4,6 +4,7 @@ const mon8am = document.getElementById('8amMon');
 const mon9am = document.getElementById('9amMon');
 const mon10am = document.getElementById('10amMon');
 const mon11am = document.getElementById('11amMon');
+const button = document.getElementById('fname_button');
 
 //get elements
 const monday = db.ref('Monday');
@@ -18,7 +19,7 @@ dbMon8am.on('value', snap =>
     mon8am.innerHTML = JSON.stringify(snap.val());
 });
 
-mon8am.addEventListener("click", (e) =>
+button.addEventListener("click", (e) =>
 {
     e.preventDefault();
     monday.child("8am").set(mon8am.value);
