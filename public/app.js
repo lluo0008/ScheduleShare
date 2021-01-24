@@ -6,7 +6,7 @@ const mon10am = document.getElementById('10amMon');
 const mon11am = document.getElementById('11amMon');
 
 //get elements
-const monday = database.ref('Monday');
+const monday = db.ref('Monday');
 
 //create references
 const dbMon8am = db.ref().child('Monday');
@@ -19,11 +19,11 @@ dbMon8am.on('value', snap =>
 });
 
 
-addBtn.addEventListener('click', (e) =>
-{
-    e.preventDefault();
-    monday.child(mon8am.value).set(mon8am.value);
-});
+// addBtn.addEventListener('click', (e) =>
+// {
+//     e.preventDefault();
+//     monday.child("8am").set(mon8am.value);
+// });
 
 updateBtn.addEventListener('click', (e) =>
 {
