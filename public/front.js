@@ -4,17 +4,17 @@ function changeColor(obj_id) {
     const db = firebase.database();
     if (name == "") {
         alert("Please Enter a Name")
-        
+
     } else {
-        if (textIn === "Open"){
+        if (textIn === "Open") {
             document.getElementById(obj_id).style.backgroundColor = "#FFFFFF";
             document.getElementById(obj_id).innerHTML = name;
-            this.value=name;
+            this.value = name;
         } else {
             document.getElementById(obj_id).style.backgroundColor = "#DDDDDD";
             document.getElementById(obj_id).innerHTML = "Open";
             this.value = "Open";
-        }   
+        }
 
         const monday = db.ref('Monday');
         const tuesday = db.ref("Tuesday");
@@ -24,376 +24,589 @@ function changeColor(obj_id) {
         const saturday = db.ref("Saturday");
         const sunday = db.ref("Sunday");
 
+        const daysOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
         //Monday
-        const mon8am = document.getElementById('8amMon');
-        const dbMon8am = db.ref().child('Monday');
-        monday.child("8am").set(this.value);
-        const mon9am = document.getElementById('9amMon');
-        const dbMon9am = db.ref().child('Monday');
-        monday.child("9am").set(this.value);
-        const mon10am = document.getElementById('10amMon');
-        const dbMon10am = db.ref().child('Monday');
-        monday.child("10am").set(this.value);
-        const mon11am = document.getElementById('11amMon');
-        const dbMon11am = db.ref().child('Monday');
-        monday.child("11am").set(this.value);
-        const mon12pm = document.getElementById('12pmMon');
-        const dbMon12pm = db.ref().child('Monday');
-        monday.child("12pm").set(this.value);
-        const mon1pm = document.getElementById('1pmMon');
-        const dbMon1pm = db.ref().child('Monday');
-        monday.child("1pm").set(this.value);
-        const mon2pm = document.getElementById('2pmMon');
-        const dbMon2pm = db.ref().child('Monday');
-        monday.child("2pm").set(this.value);
-        const mon3pm = document.getElementById('3pmMon');
-        const dbMon3pm = db.ref().child('Monday');
-        monday.child("3pm").set(this.value);
-        const mon4pm = document.getElementById('4pmMon');
-        const dbMon4pm = db.ref().child('Monday');
-        monday.child("4pm").set(this.value);
-        const mon5pm = document.getElementById('5pmMon');
-        const dbMon5pm = db.ref().child('Monday');
-        monday.child("5pm").set(this.value);
-        const mon6pm = document.getElementById('6pmMon');
-        const dbMon6pm = db.ref().child('Monday');
-        monday.child("6pm").set(this.value);
-        const mon7pm = document.getElementById('7pmMon');
-        const dbMon7pm = db.ref().child('Monday');
-        monday.child("7pm").set(this.value);
-        const mon8pm = document.getElementById('8pmMon');
-        const dbMon8pm = db.ref().child('Monday');
-        monday.child("8pm").set(this.value);
-        const mon9pm = document.getElementById('9pmMon');
-        const dbMon9pm = db.ref().child('Monday');
-        monday.child("9pm").set(this.value);
-        const mon10pm = document.getElementById('10pmMon');
-        const dbMon10pm = db.ref().child('Monday');
-        monday.child("10pm").set(this.value);
-        const mon11pm = document.getElementById('11pmMon');
-        const dbMon11pm = db.ref().child('Monday');
-        monday.child("11pm").set(this.value);
-        const mon12am = document.getElementById('12amMon');
-        const dbMon12am = db.ref().child('Monday');
-        monday.child("12am").set(this.value);
 
-        //Tuesday
-        const tue8am = document.getElementById('8amTue');
-        const dbTue8am = db.ref().child('Tuesday');
-        tuesday.child("8am").set(this.value);
-        const tue9am = document.getElementById('9amTue');
-        const dbTue9am = db.ref().child('Tuesday');
-        tuesday.child("9am").set(this.value);
-        const tue10am = document.getElementById('10amTue');
-        const dbTue10am = db.ref().child('Tuesday');
-        tuesday.child("10am").set(this.value);
-        const tue11am = document.getElementById('11amTue');
-        const dbTue11am = db.ref().child('Tuesday');
-        tuesday.child("11am").set(this.value);
-        const tue12pm = document.getElementById('12pmTue');
-        const dbTue12pm = db.ref().child('Tuesday');
-        tuesday.child("12pm").set(this.value);
-        const tue1pm = document.getElementById('1pmTue');
-        const dbTue1pm = db.ref().child('Tuesday');
-        tuesday.child("1pm").set(this.value);
-        const tue2pm = document.getElementById('2pmTue');
-        const dbTue2pm = db.ref().child('Tuesday');
-        tuesday.child("2pm").set(this.value);
-        const tue3pm = document.getElementById('3pmTue');
-        const dbTue3pm = db.ref().child('Tuesday');
-        tuesday.child("3pm").set(this.value);
-        const tue4pm = document.getElementById('4pmTue');
-        const dbTue4pm = db.ref().child('Tuesday');
-        tuesday.child("4pm").set(this.value);
-        const tue5pm = document.getElementById('5pmTue');
-        const dbTue5pm = db.ref().child('Tuesday');
-        tuesday.child("5pm").set(this.value);
-        const tue6pm = document.getElementById('6pmTue');
-        const dbTue6pm = db.ref().child('Tuesday');
-        tuesday.child("6pm").set(this.value);
-        const tue7pm = document.getElementById('7pmTue');
-        const dbTue7pm = db.ref().child('Tuesday');
-        tuesday.child("7pm").set(this.value);
-        const tue8pm = document.getElementById('8pmTue');
-        const dbTue8pm = db.ref().child('Tuesday');
-        tuesday.child("8pm").set(this.value);
-        const tue9pm = document.getElementById('9pmTue');
-        const dbTue9pm = db.ref().child('Tuesday');
-        tuesday.child("9pm").set(this.value);
-        const tue10pm = document.getElementById('10pmTue');
-        const dbTue10pm = db.ref().child('Tuesday');
-        tuesday.child("10pm").set(this.value);
-        const tue11pm = document.getElementById('11pmTue');
-        const dbTue11pm = db.ref().child('Tuesday');
-        tuesday.child("11pm").set(this.value);
-        const tue12am = document.getElementById('12amTue');
-        const dbTue12am = db.ref().child('Tuesday');
-        tuesday.child("12am").set(this.value);
 
-        //Wednesday
-        const wed8am = document.getElementById('8amWed');
-        const dbWed8am = db.ref().child('Wednesday');
-        wednesday.child("8am").set(this.value);
-        const wed9am = document.getElementById('9amWed');
-        const dbWed9am = db.ref().child('Wednesday');
-        wednesday.child("9am").set(this.value);
-        const wed10am = document.getElementById('10amWed');
-        const dbWed10am = db.ref().child('Wednesday');
-        wednesday.child("10am").set(this.value);
-        const wed11am = document.getElementById('11amWed');
-        const dbWed11am = db.ref().child('Wednesday');
-        wednesday.child("11am").set(this.value);
-        const wed12pm = document.getElementById('12pmWed');
-        const dbWed12pm = db.ref().child('Wednesday');
-        wednesday.child("12pm").set(this.value);
-        const wed1pm = document.getElementById('1pmWed');
-        const dbWed1pm = db.ref().child('Wednesday');
-        wednesday.child("1pm").set(this.value);
-        const wed2pm = document.getElementById('2pmWed');
-        const dbWed2pm = db.ref().child('Wednesday');
-        wednesday.child("2pm").set(this.value);
-        const wed3pm = document.getElementById('3pmWed');
-        const dbWed3pm = db.ref().child('Wednesday');
-        wednesday.child("3pm").set(this.value);
-        const wed4pm = document.getElementById('4pmWed');
-        const dbWed4pm = db.ref().child('Wednesday');
-        wednesday.child("4pm").set(this.value);
-        const wed5pm = document.getElementById('5pmWed');
-        const dbWed5pm = db.ref().child('Wednesday');
-        wednesday.child("5pm").set(this.value);
-        const wed6pm = document.getElementById('6pmWed');
-        const dbWed6pm = db.ref().child('Wednesday');
-        wednesday.child("6pm").set(this.value);
-        const wed7pm = document.getElementById('7pmWed');
-        const dbWed7pm = db.ref().child('Wednesday');
-        wednesday.child("7pm").set(this.value);
-        const wed8pm = document.getElementById('8pmWed');
-        const dbWed8pm = db.ref().child('Wednesday');
-        wednesday.child("8pm").set(this.value);
-        const wed9pm = document.getElementById('9pmWed');
-        const dbWed9pm = db.ref().child('Wednesday');
-        wednesday.child("9pm").set(this.value);
-        const wed10pm = document.getElementById('10pmWed');
-        const dbWed10pm = db.ref().child('Wednesday');
-        wednesday.child("10pm").set(this.value);
-        const wed11pm = document.getElementById('11pmWed');
-        const dbWed11pm = db.ref().child('Wednesday');
-        wednesday.child("11pm").set(this.value);
-        const wed12am = document.getElementById('12amWed');
-        const dbWed12am = db.ref().child('Wednesday');
-        wednesday.child("12am").set(this.value);
+        switch (this.id) {
+            case "8amMon":
+                const mon8am = document.getElementById('8amMon');
+                const dbMon8am = db.ref().child('Monday');
+                monday.child("8am").set(this.value);
+                break;
 
-        //Thursday
-        const thu8am = document.getElementById('8amThu');
-        const dbThu8am = db.ref().child('Thursday');
-        thursday.child("8am").set(this.value);
-        const thu9am = document.getElementById('9amThu');
-        const dbThu9am = db.ref().child('Thursday');
-        thursday.child("9am").set(this.value);
-        const thu10am = document.getElementById('10amThu');
-        const dbThu10am = db.ref().child('Thursday');
-        thursday.child("10am").set(this.value);
-        const thu11am = document.getElementById('11amThu');
-        const dbThu11am = db.ref().child('Thursday');
-        thursday.child("11am").set(this.value);
-        const thu12pm = document.getElementById('12pmThu');
-        const dbThu12pm = db.ref().child('Thursday');
-        thursday.child("12pm").set(this.value);
-        const thu1pm = document.getElementById('1pmThu');
-        const dbThu1pm = db.ref().child('Thursday');
-        thursday.child("1pm").set(this.value);
-        const thu2pm = document.getElementById('2pmThu');
-        const dbThu2pm = db.ref().child('Thursday');
-        thursday.child("2pm").set(this.value);
-        const thu3pm = document.getElementById('3pmThu');
-        const dbThu3pm = db.ref().child('Thursday');
-        thursday.child("3pm").set(this.value);
-        const thu4pm = document.getElementById('4pmThu');
-        const dbThu4pm = db.ref().child('Thursday');
-        thursday.child("4pm").set(this.value);
-        const thu5pm = document.getElementById('5pmThu');
-        const dbThu5pm = db.ref().child('Thursday');
-        thursday.child("5pm").set(this.value);
-        const thu6pm = document.getElementById('6pmThu');
-        const dbThu6pm = db.ref().child('Thursday');
-        thursday.child("6pm").set(this.value);
-        const thu7pm = document.getElementById('7pmThu');
-        const dbThu7pm = db.ref().child('Thursday');
-        thursday.child("7pm").set(this.value);
-        const thu8pm = document.getElementById('8pmThu');
-        const dbThu8pm = db.ref().child('Thursday');
-        thursday.child("8pm").set(this.value);
-        const thu9pm = document.getElementById('9pmThu');
-        const dbThu9pm = db.ref().child('Thursday');
-        thursday.child("9pm").set(this.value);
-        const thu10pm = document.getElementById('10pmThu');
-        const dbThu10pm = db.ref().child('Thursday');
-        thursday.child("10pm").set(this.value);
-        const thu11pm = document.getElementById('11pmThu');
-        const dbThu11pm = db.ref().child('Thursday');
-        thursday.child("11pm").set(this.value);
-        const thu12am = document.getElementById('12amThu');
-        const dbThu12am = db.ref().child('Thursday');
-        thursday.child("12am").set(this.value);
+            case "9amMon":
+                const mon9am = document.getElementById('9amMon');
+                const dbMon9am = db.ref().child('Monday');
+                monday.child("9am").set(this.value);
+                break;
 
-        //Friday
-        const fri8am = document.getElementById('8amFri');
-        const dbFri8am = db.ref().child('Friday');
-        friday.child("8am").set(this.value);
-        const fri9am = document.getElementById('9amFri');
-        const dbFri9am = db.ref().child('Friday');
-        friday.child("9am").set(this.value);
-        const fri10am = document.getElementById('10amFri');
-        const dbFri10am = db.ref().child('Friday');
-        friday.child("10am").set(this.value);
-        const fri11am = document.getElementById('11amFri');
-        const dbFri11am = db.ref().child('Friday');
-        friday.child("11am").set(this.value);
-        const fri12pm = document.getElementById('12pmFri');
-        const dbFri12pm = db.ref().child('Friday');
-        friday.child("12pm").set(this.value);
-        const fri1pm = document.getElementById('1pmFri');
-        const dbFri1pm = db.ref().child('Friday');
-        friday.child("1pm").set(this.value);
-        const fri2pm = document.getElementById('2pmFri');
-        const dbFri2pm = db.ref().child('Friday');
-        friday.child("2pm").set(this.value);
-        const fri3pm = document.getElementById('3pmFri');
-        const dbFri3pm = db.ref().child('Friday');
-        friday.child("3pm").set(this.value);
-        const fri4pm = document.getElementById('4pmFri');
-        const dbFri4pm = db.ref().child('Friday');
-        friday.child("4pm").set(this.value);
-        const fri5pm = document.getElementById('5pmFri');
-        const dbFri5pm = db.ref().child('Friday');
-        friday.child("5pm").set(this.value);
-        const fri6pm = document.getElementById('6pmFri');
-        const dbFri6pm = db.ref().child('Friday');
-        friday.child("6pm").set(this.value);
-        const fri7pm = document.getElementById('7pmFri');
-        const dbFri7pm = db.ref().child('Friday');
-        friday.child("7pm").set(this.value);
-        const fri8pm = document.getElementById('8pmFri');
-        const dbFri8pm = db.ref().child('Friday');
-        friday.child("8pm").set(this.value);
-        const fri9pm = document.getElementById('9pmFri');
-        const dbFri9pm = db.ref().child('Friday');
-        friday.child("9pm").set(this.value);
-        const fri10pm = document.getElementById('10pmFri');
-        const dbFri10pm = db.ref().child('Friday');
-        friday.child("10pm").set(this.value);
-        const fri11pm = document.getElementById('11pmFri');
-        const dbFri11pm = db.ref().child('Friday');
-        friday.child("11pm").set(this.value);
-        const fri12am = document.getElementById('12amFri');
-        const dbFri12am = db.ref().child('Friday');
-        friday.child("12am").set(this.value);
+            case "10amMon":
+                const mon10am = document.getElementById('10amMon');
+                const dbMon10am = db.ref().child('Monday');
+                monday.child("10am").set(this.value);
+                break;
 
-        //Saturday
-        const sat8am = document.getElementById('8amSat');
-        const dbSat8am = db.ref().child('Saturday');
-        saturday.child("8am").set(this.value);
-        const sat9am = document.getElementById('9amSat');
-        const dbSat9am = db.ref().child('Saturday');
-        saturday.child("9am").set(this.value);
-        const sat10am = document.getElementById('10amSat');
-        const dbSat10am = db.ref().child('Saturday');
-        saturday.child("10am").set(this.value);
-        const sat11am = document.getElementById('11amSat');
-        const dbSat11am = db.ref().child('Saturday');
-        saturday.child("11am").set(this.value);
-        const sat12pm = document.getElementById('12pmSat');
-        const dbSat12pm = db.ref().child('Saturday');
-        saturday.child("12pm").set(this.value);
-        const sat1pm = document.getElementById('1pmSat');
-        const dbSat1pm = db.ref().child('Saturday');
-        saturday.child("1pm").set(this.value);
-        const sat2pm = document.getElementById('2pmSat');
-        const dbSat2pm = db.ref().child('Saturday');
-        saturday.child("2pm").set(this.value);
-        const sat3pm = document.getElementById('3pmSat');
-        const dbSat3pm = db.ref().child('Saturday');
-        saturday.child("3pm").set(this.value);
-        const sat4pm = document.getElementById('4pmSat');
-        const dbSat4pm = db.ref().child('Saturday');
-        saturday.child("4pm").set(this.value);
-        const sat5pm = document.getElementById('5pmSat');
-        const dbSat5pm = db.ref().child('Saturday');
-        saturday.child("5pm").set(this.value);
-        const sat6pm = document.getElementById('6pmSat');
-        const dbSat6pm = db.ref().child('Saturday');
-        saturday.child("6pm").set(this.value);
-        const sat7pm = document.getElementById('7pmSat');
-        const dbSat7pm = db.ref().child('Saturday');
-        saturday.child("7pm").set(this.value);
-        const sat8pm = document.getElementById('8pmSat');
-        const dbSat8pm = db.ref().child('Saturday');
-        saturday.child("8pm").set(this.value);
-        const sat9pm = document.getElementById('9pmSat');
-        const dbSat9pm = db.ref().child('Saturday');
-        saturday.child("9pm").set(this.value);
-        const sat10pm = document.getElementById('10pmSat');
-        const dbSat10pm = db.ref().child('Saturday');
-        saturday.child("10pm").set(this.value);
-        const sat11pm = document.getElementById('11pmSat');
-        const dbSat11pm = db.ref().child('Saturday');
-        saturday.child("11pm").set(this.value);
-        const sat12am = document.getElementById('12amSat');
-        const dbSat12am = db.ref().child('Saturday');
-        saturday.child("12am").set(this.value);
+            case "11amMon":
+                const mon11am = document.getElementById('11amMon');
+                const dbMon11am = db.ref().child('Monday');
+                monday.child("11am").set(this.value);
+                break;
 
-        //Sunday
-        const sun8am = document.getElementById('8amSun');
-        const dbSun8am = db.ref().child('Sunday');
-        sunday.child("8am").set(this.value);
-        const sun9am = document.getElementById('9amSun');
-        const dbSun9am = db.ref().child('Sunday');
-        sunday.child("9am").set(this.value);
-        const sun10am = document.getElementById('10amSun');
-        const dbSun10am = db.ref().child('Sunday');
-        sunday.child("10am").set(this.value);
-        const sun11am = document.getElementById('11amSun');
-        const dbSun11am = db.ref().child('Sunday');
-        sunday.child("11am").set(this.value);
-        const sun12pm = document.getElementById('12pmSun');
-        const dbSun12pm = db.ref().child('Sunday');
-        sunday.child("12pm").set(this.value);
-        const sun1pm = document.getElementById('1pmSun');
-        const dbSun1pm = db.ref().child('Sunday');
-        sunday.child("1pm").set(this.value);
-        const sun2pm = document.getElementById('2pmSun');
-        const dbSun2pm = db.ref().child('Sunday');
-        sunday.child("2pm").set(this.value);
-        const sun3pm = document.getElementById('3pmSun');
-        const dbSun3pm = db.ref().child('Sunday');
-        sunday.child("3pm").set(this.value);
-        const sun4pm = document.getElementById('4pmSun');
-        const dbSun4pm = db.ref().child('Sunday');
-        sunday.child("4pm").set(this.value);
-        const sun5pm = document.getElementById('5pmSun');
-        const dbSun5pm = db.ref().child('Sunday');
-        sunday.child("5pm").set(this.value);
-        const sun6pm = document.getElementById('6pmSun');
-        const dbSun6pm = db.ref().child('Sunday');
-        sunday.child("6pm").set(this.value);
-        const sun7pm = document.getElementById('7pmSun');
-        const dbSun7pm = db.ref().child('Sunday');
-        sunday.child("7pm").set(this.value);
-        const sun8pm = document.getElementById('8pmSun');
-        const dbSun8pm = db.ref().child('Sunday');
-        sunday.child("8pm").set(this.value);
-        const sun9pm = document.getElementById('9pmSun');
-        const dbSun9pm = db.ref().child('Sunday');
-        sunday.child("9pm").set(this.value);
-        const sun10pm = document.getElementById('10pmSun');
-        const dbSun10pm = db.ref().child('Sunday');
-        sunday.child("10pm").set(this.value);
-        const sun11pm = document.getElementById('11pmSun');
-        const dbSun11pm = db.ref().child('Sunday');
-        sunday.child("11pm").set(this.value);
-        const sun12am = document.getElementById('12amSun');
-        const dbSun12am = db.ref().child('Sunday');
-        sunday.child("12am").set(this.value);
+            case "12pmMon":
+                const mon12pm = document.getElementById('12pmMon');
+                const dbMon12pm = db.ref().child('Monday');
+                monday.child("12pm").set(this.value);
+                break;
+
+            case "1pmMon":
+                const mon1pm = document.getElementById('1pmMon');
+                const dbMon1pm = db.ref().child('Monday');
+                monday.child("1pm").set(this.value);
+                break;
+
+            case "2pmMon":
+                const mon2pm = document.getElementById('2pmMon');
+                const dbMon2pm = db.ref().child('Monday');
+                monday.child("2pm").set(this.value);
+                break;
+
+            case "3pmMon":
+                const mon3pm = document.getElementById('3pmMon');
+                const dbMon3pm = db.ref().child('Monday');
+                monday.child("3pm").set(this.value);
+                break;
+
+            case "4pmMon":
+                const mon4pm = document.getElementById('4pmMon');
+                const dbMon4pm = db.ref().child('Monday');
+                monday.child("4pm").set(this.value);
+                break;
+
+            case "5pmMon":
+                const mon5pm = document.getElementById('5pmMon');
+                const dbMon5pm = db.ref().child('Monday');
+                monday.child("5pm").set(this.value);
+                break;
+
+            case "6pmMon":
+                const mon6pm = document.getElementById('6pmMon');
+                const dbMon6pm = db.ref().child('Monday');
+                monday.child("6pm").set(this.value);
+                break;
+
+            case "7pmMon":
+                const mon7pm = document.getElementById('7pmMon');
+                const dbMon7pm = db.ref().child('Monday');
+                monday.child("7pm").set(this.value);
+                break;
+
+            case "8pmMon":
+                const mon8pm = document.getElementById('8pmMon');
+                const dbMon8pm = db.ref().child('Monday');
+                monday.child("8pm").set(this.value);
+                break;
+
+            case "9pmMon":
+                const mon9pm = document.getElementById('9pmMon');
+                const dbMon9pm = db.ref().child('Monday');
+                monday.child("9pm").set(this.value);
+                break;
+
+            case "10pmMon":
+                const mon10pm = document.getElementById('10pmMon');
+                const dbMon10pm = db.ref().child('Monday');
+                monday.child("10pm").set(this.value);
+                break;
+
+            case "11pmMon":
+                const mon11pm = document.getElementById('11pmMon');
+                const dbMon11pm = db.ref().child('Monday');
+                monday.child("11pm").set(this.value);
+                break;
+
+            case "12amMon":
+                const mon12am = document.getElementById('12amMon');
+                const dbMon12am = db.ref().child('Monday');
+                monday.child("12am").set(this.value);
+                break;
+
+
+
+            //Tuesday
+            case "8amTue":
+                const tue8am = document.getElementById('8amTue');
+                const dbTue8am = db.ref().child('Tuesday');
+                tuesday.child("8am").set(this.value);
+                break;
+
+            case "9amTue":
+                const tue9am = document.getElementById('9amTue');
+                const dbTue9am = db.ref().child('Tuesday');
+                tuesday.child("9am").set(this.value);
+                break;
+
+            case "9amTue":
+                const tue10am = document.getElementById('10amTue');
+                const dbTue10am = db.ref().child('Tuesday');
+                tuesday.child("10am").set(this.value);
+                break;
+
+            case "9amTue":
+                const tue11am = document.getElementById('11amTue');
+                const dbTue11am = db.ref().child('Tuesday');
+                tuesday.child("11am").set(this.value);
+                break;
+
+            case "9amTue":
+                const tue12pm = document.getElementById('12pmTue');
+                const dbTue12pm = db.ref().child('Tuesday');
+                tuesday.child("12pm").set(this.value);
+                break;
+
+            case "9amTue":
+                const tue1pm = document.getElementById('1pmTue');
+                const dbTue1pm = db.ref().child('Tuesday');
+                tuesday.child("1pm").set(this.value);
+                break;
+
+            case "9amTue":
+                const tue2pm = document.getElementById('2pmTue');
+                const dbTue2pm = db.ref().child('Tuesday');
+                tuesday.child("2pm").set(this.value);
+                break;
+
+            case "9amTue":
+                const tue3pm = document.getElementById('3pmTue');
+                const dbTue3pm = db.ref().child('Tuesday');
+                tuesday.child("3pm").set(this.value);
+                break;
+
+            case "9amTue":
+                const tue4pm = document.getElementById('4pmTue');
+                const dbTue4pm = db.ref().child('Tuesday');
+                tuesday.child("4pm").set(this.value);
+                break;
+
+            case "9amTue":
+                const tue5pm = document.getElementById('5pmTue');
+                const dbTue5pm = db.ref().child('Tuesday');
+                tuesday.child("5pm").set(this.value);
+                break;
+
+            case "9amTue":
+                const tue6pm = document.getElementById('6pmTue');
+                const dbTue6pm = db.ref().child('Tuesday');
+                tuesday.child("6pm").set(this.value);
+                break;
+
+            case "9amTue":
+                const tue7pm = document.getElementById('7pmTue');
+                const dbTue7pm = db.ref().child('Tuesday');
+                tuesday.child("7pm").set(this.value);
+                break;
+
+            case "9amTue":
+                const tue8pm = document.getElementById('8pmTue');
+                const dbTue8pm = db.ref().child('Tuesday');
+                tuesday.child("8pm").set(this.value);
+                break;
+
+            case "9amTue":
+                const tue9pm = document.getElementById('9pmTue');
+                const dbTue9pm = db.ref().child('Tuesday');
+                tuesday.child("9pm").set(this.value);
+                break;
+
+            case "9amTue":
+                const tue10pm = document.getElementById('10pmTue');
+                const dbTue10pm = db.ref().child('Tuesday');
+                tuesday.child("10pm").set(this.value);
+                break;
+
+            case "9amTue":
+                const tue11pm = document.getElementById('11pmTue');
+                const dbTue11pm = db.ref().child('Tuesday');
+                tuesday.child("11pm").set(this.value);
+                break;
+
+            case "9amTue":
+                const tue12am = document.getElementById('12amTue');
+                const dbTue12am = db.ref().child('Tuesday');
+                tuesday.child("12am").set(this.value);
+                break;
+
+
+
+            //Wednesday
+            case "8amWed":
+                const wed8am = document.getElementById('8amWed');
+                const dbWed8am = db.ref().child('Wednesday');
+                wednesday.child("8am").set(this.value);
+                break;
+
+            case "9amWed":
+                const wed9am = document.getElementById('9amWed');
+                const dbWed9am = db.ref().child('Wednesday');
+                wednesday.child("9am").set(this.value);
+                break;
+
+            case "9amWed":
+                const wed10am = document.getElementById('10amWed');
+                const dbWed10am = db.ref().child('Wednesday');
+                wednesday.child("10am").set(this.value);
+                break;
+
+            case "9amWed":
+                const wed11am = document.getElementById('11amWed');
+                const dbWed11am = db.ref().child('Wednesday');
+                wednesday.child("11am").set(this.value);
+                break;
+
+            case "9amWed":
+                const wed12pm = document.getElementById('12pmWed');
+                const dbWed12pm = db.ref().child('Wednesday');
+                wednesday.child("12pm").set(this.value);
+                break;
+
+            case "9amWed":
+                const wed1pm = document.getElementById('1pmWed');
+                const dbWed1pm = db.ref().child('Wednesday');
+                wednesday.child("1pm").set(this.value);
+                break;
+
+            case "9amWed":
+                const wed2pm = document.getElementById('2pmWed');
+                const dbWed2pm = db.ref().child('Wednesday');
+                wednesday.child("2pm").set(this.value);
+                break;
+
+            case "9amWed":
+                const wed3pm = document.getElementById('3pmWed');
+                const dbWed3pm = db.ref().child('Wednesday');
+                wednesday.child("3pm").set(this.value);
+                break;
+
+            case "9amWed":
+                const wed4pm = document.getElementById('4pmWed');
+                const dbWed4pm = db.ref().child('Wednesday');
+                wednesday.child("4pm").set(this.value);
+                break;
+
+            case "9amWed":
+                const wed5pm = document.getElementById('5pmWed');
+                const dbWed5pm = db.ref().child('Wednesday');
+                wednesday.child("5pm").set(this.value);
+                break;
+
+            case "9amWed":
+                const wed6pm = document.getElementById('6pmWed');
+                const dbWed6pm = db.ref().child('Wednesday');
+                wednesday.child("6pm").set(this.value);
+                break;
+
+            case "9amWed":
+                const wed7pm = document.getElementById('7pmWed');
+                const dbWed7pm = db.ref().child('Wednesday');
+                wednesday.child("7pm").set(this.value);
+                break;
+
+            case "9amWed":
+                const wed8pm = document.getElementById('8pmWed');
+                const dbWed8pm = db.ref().child('Wednesday');
+                wednesday.child("8pm").set(this.value);
+                break;
+
+            case "9amWed":
+                const wed9pm = document.getElementById('9pmWed');
+                const dbWed9pm = db.ref().child('Wednesday');
+                wednesday.child("9pm").set(this.value);
+                break;
+
+            case "9amWed":
+                const wed10pm = document.getElementById('10pmWed');
+                const dbWed10pm = db.ref().child('Wednesday');
+                wednesday.child("10pm").set(this.value);
+                break;
+
+            case "9amWed":
+                const wed11pm = document.getElementById('11pmWed');
+                const dbWed11pm = db.ref().child('Wednesday');
+                wednesday.child("11pm").set(this.value);
+                break;
+
+            case "9amWed":
+                const wed12am = document.getElementById('12amWed');
+                const dbWed12am = db.ref().child('Wednesday');
+                wednesday.child("12am").set(this.value);
+                break;
+
+
+
+            //Thursday
+            case "8amThu":
+                const thu8am = document.getElementById('8amThu');
+                const dbThu8am = db.ref().child('Thursday');
+                thursday.child("8am").set(this.value);
+                break;
+
+            case "9amThu":
+                const thu9am = document.getElementById('9amThu');
+                const dbThu9am = db.ref().child('Thursday');
+                thursday.child("9am").set(this.value);
+                break;
+
+            case "9amThu":
+                const thu10am = document.getElementById('10amThu');
+                const dbThu10am = db.ref().child('Thursday');
+                thursday.child("10am").set(this.value);
+                break;
+
+            case "9amThu":
+                const thu11am = document.getElementById('11amThu');
+                const dbThu11am = db.ref().child('Thursday');
+                thursday.child("11am").set(this.value);
+                break;
+
+            case "9amThu":
+                const thu12pm = document.getElementById('12pmThu');
+                const dbThu12pm = db.ref().child('Thursday');
+                thursday.child("12pm").set(this.value);
+                break;
+
+            case "9amThu":
+                const thu1pm = document.getElementById('1pmThu');
+                const dbThu1pm = db.ref().child('Thursday');
+                thursday.child("1pm").set(this.value);
+                break;
+
+            case "9amThu":
+                const thu2pm = document.getElementById('2pmThu');
+                const dbThu2pm = db.ref().child('Thursday');
+                thursday.child("2pm").set(this.value);
+                break;
+
+            case "9amThu":
+                const thu3pm = document.getElementById('3pmThu');
+                const dbThu3pm = db.ref().child('Thursday');
+                thursday.child("3pm").set(this.value);
+                break;
+
+            case "9amThu":
+                const thu4pm = document.getElementById('4pmThu');
+                const dbThu4pm = db.ref().child('Thursday');
+                thursday.child("4pm").set(this.value);
+                break;
+
+            case "9amThu":
+                const thu5pm = document.getElementById('5pmThu');
+                const dbThu5pm = db.ref().child('Thursday');
+                thursday.child("5pm").set(this.value);
+                break;
+
+            case "9amThu":
+                const thu6pm = document.getElementById('6pmThu');
+                const dbThu6pm = db.ref().child('Thursday');
+                thursday.child("6pm").set(this.value);
+                break;
+
+            case "9amThu":
+                const thu7pm = document.getElementById('7pmThu');
+                const dbThu7pm = db.ref().child('Thursday');
+                thursday.child("7pm").set(this.value);
+                break;
+
+            case "9amThu":
+                const thu8pm = document.getElementById('8pmThu');
+                const dbThu8pm = db.ref().child('Thursday');
+                thursday.child("8pm").set(this.value);
+                break;
+
+            case "9amThu":
+                const thu9pm = document.getElementById('9pmThu');
+                const dbThu9pm = db.ref().child('Thursday');
+                thursday.child("9pm").set(this.value);
+                break;
+
+            case "9amThu":
+                const thu10pm = document.getElementById('10pmThu');
+                const dbThu10pm = db.ref().child('Thursday');
+                thursday.child("10pm").set(this.value);
+                break;
+
+            case "9amThu":
+                const thu11pm = document.getElementById('11pmThu');
+                const dbThu11pm = db.ref().child('Thursday');
+                thursday.child("11pm").set(this.value);
+                break;
+
+            case "9amThu":
+                const thu12am = document.getElementById('12amThu');
+                const dbThu12am = db.ref().child('Thursday');
+                thursday.child("12am").set(this.value);
+                break;
+
+
+
+                //Friday
+                const fri8am = document.getElementById('8amFri');
+                const dbFri8am = db.ref().child('Friday');
+                friday.child("8am").set(this.value);
+                const fri9am = document.getElementById('9amFri');
+                const dbFri9am = db.ref().child('Friday');
+                friday.child("9am").set(this.value);
+                const fri10am = document.getElementById('10amFri');
+                const dbFri10am = db.ref().child('Friday');
+                friday.child("10am").set(this.value);
+                const fri11am = document.getElementById('11amFri');
+                const dbFri11am = db.ref().child('Friday');
+                friday.child("11am").set(this.value);
+                const fri12pm = document.getElementById('12pmFri');
+                const dbFri12pm = db.ref().child('Friday');
+                friday.child("12pm").set(this.value);
+                const fri1pm = document.getElementById('1pmFri');
+                const dbFri1pm = db.ref().child('Friday');
+                friday.child("1pm").set(this.value);
+                const fri2pm = document.getElementById('2pmFri');
+                const dbFri2pm = db.ref().child('Friday');
+                friday.child("2pm").set(this.value);
+                const fri3pm = document.getElementById('3pmFri');
+                const dbFri3pm = db.ref().child('Friday');
+                friday.child("3pm").set(this.value);
+                const fri4pm = document.getElementById('4pmFri');
+                const dbFri4pm = db.ref().child('Friday');
+                friday.child("4pm").set(this.value);
+                const fri5pm = document.getElementById('5pmFri');
+                const dbFri5pm = db.ref().child('Friday');
+                friday.child("5pm").set(this.value);
+                const fri6pm = document.getElementById('6pmFri');
+                const dbFri6pm = db.ref().child('Friday');
+                friday.child("6pm").set(this.value);
+                const fri7pm = document.getElementById('7pmFri');
+                const dbFri7pm = db.ref().child('Friday');
+                friday.child("7pm").set(this.value);
+                const fri8pm = document.getElementById('8pmFri');
+                const dbFri8pm = db.ref().child('Friday');
+                friday.child("8pm").set(this.value);
+                const fri9pm = document.getElementById('9pmFri');
+                const dbFri9pm = db.ref().child('Friday');
+                friday.child("9pm").set(this.value);
+                const fri10pm = document.getElementById('10pmFri');
+                const dbFri10pm = db.ref().child('Friday');
+                friday.child("10pm").set(this.value);
+                const fri11pm = document.getElementById('11pmFri');
+                const dbFri11pm = db.ref().child('Friday');
+                friday.child("11pm").set(this.value);
+                const fri12am = document.getElementById('12amFri');
+                const dbFri12am = db.ref().child('Friday');
+                friday.child("12am").set(this.value);
+
+                //Saturday
+                const sat8am = document.getElementById('8amSat');
+                const dbSat8am = db.ref().child('Saturday');
+                saturday.child("8am").set(this.value);
+                const sat9am = document.getElementById('9amSat');
+                const dbSat9am = db.ref().child('Saturday');
+                saturday.child("9am").set(this.value);
+                const sat10am = document.getElementById('10amSat');
+                const dbSat10am = db.ref().child('Saturday');
+                saturday.child("10am").set(this.value);
+                const sat11am = document.getElementById('11amSat');
+                const dbSat11am = db.ref().child('Saturday');
+                saturday.child("11am").set(this.value);
+                const sat12pm = document.getElementById('12pmSat');
+                const dbSat12pm = db.ref().child('Saturday');
+                saturday.child("12pm").set(this.value);
+                const sat1pm = document.getElementById('1pmSat');
+                const dbSat1pm = db.ref().child('Saturday');
+                saturday.child("1pm").set(this.value);
+                const sat2pm = document.getElementById('2pmSat');
+                const dbSat2pm = db.ref().child('Saturday');
+                saturday.child("2pm").set(this.value);
+                const sat3pm = document.getElementById('3pmSat');
+                const dbSat3pm = db.ref().child('Saturday');
+                saturday.child("3pm").set(this.value);
+                const sat4pm = document.getElementById('4pmSat');
+                const dbSat4pm = db.ref().child('Saturday');
+                saturday.child("4pm").set(this.value);
+                const sat5pm = document.getElementById('5pmSat');
+                const dbSat5pm = db.ref().child('Saturday');
+                saturday.child("5pm").set(this.value);
+                const sat6pm = document.getElementById('6pmSat');
+                const dbSat6pm = db.ref().child('Saturday');
+                saturday.child("6pm").set(this.value);
+                const sat7pm = document.getElementById('7pmSat');
+                const dbSat7pm = db.ref().child('Saturday');
+                saturday.child("7pm").set(this.value);
+                const sat8pm = document.getElementById('8pmSat');
+                const dbSat8pm = db.ref().child('Saturday');
+                saturday.child("8pm").set(this.value);
+                const sat9pm = document.getElementById('9pmSat');
+                const dbSat9pm = db.ref().child('Saturday');
+                saturday.child("9pm").set(this.value);
+                const sat10pm = document.getElementById('10pmSat');
+                const dbSat10pm = db.ref().child('Saturday');
+                saturday.child("10pm").set(this.value);
+                const sat11pm = document.getElementById('11pmSat');
+                const dbSat11pm = db.ref().child('Saturday');
+                saturday.child("11pm").set(this.value);
+                const sat12am = document.getElementById('12amSat');
+                const dbSat12am = db.ref().child('Saturday');
+                saturday.child("12am").set(this.value);
+
+                //Sunday
+                const sun8am = document.getElementById('8amSun');
+                const dbSun8am = db.ref().child('Sunday');
+                sunday.child("8am").set(this.value);
+                const sun9am = document.getElementById('9amSun');
+                const dbSun9am = db.ref().child('Sunday');
+                sunday.child("9am").set(this.value);
+                const sun10am = document.getElementById('10amSun');
+                const dbSun10am = db.ref().child('Sunday');
+                sunday.child("10am").set(this.value);
+                const sun11am = document.getElementById('11amSun');
+                const dbSun11am = db.ref().child('Sunday');
+                sunday.child("11am").set(this.value);
+                const sun12pm = document.getElementById('12pmSun');
+                const dbSun12pm = db.ref().child('Sunday');
+                sunday.child("12pm").set(this.value);
+                const sun1pm = document.getElementById('1pmSun');
+                const dbSun1pm = db.ref().child('Sunday');
+                sunday.child("1pm").set(this.value);
+                const sun2pm = document.getElementById('2pmSun');
+                const dbSun2pm = db.ref().child('Sunday');
+                sunday.child("2pm").set(this.value);
+                const sun3pm = document.getElementById('3pmSun');
+                const dbSun3pm = db.ref().child('Sunday');
+                sunday.child("3pm").set(this.value);
+                const sun4pm = document.getElementById('4pmSun');
+                const dbSun4pm = db.ref().child('Sunday');
+                sunday.child("4pm").set(this.value);
+                const sun5pm = document.getElementById('5pmSun');
+                const dbSun5pm = db.ref().child('Sunday');
+                sunday.child("5pm").set(this.value);
+                const sun6pm = document.getElementById('6pmSun');
+                const dbSun6pm = db.ref().child('Sunday');
+                sunday.child("6pm").set(this.value);
+                const sun7pm = document.getElementById('7pmSun');
+                const dbSun7pm = db.ref().child('Sunday');
+                sunday.child("7pm").set(this.value);
+                const sun8pm = document.getElementById('8pmSun');
+                const dbSun8pm = db.ref().child('Sunday');
+                sunday.child("8pm").set(this.value);
+                const sun9pm = document.getElementById('9pmSun');
+                const dbSun9pm = db.ref().child('Sunday');
+                sunday.child("9pm").set(this.value);
+                const sun10pm = document.getElementById('10pmSun');
+                const dbSun10pm = db.ref().child('Sunday');
+                sunday.child("10pm").set(this.value);
+                const sun11pm = document.getElementById('11pmSun');
+                const dbSun11pm = db.ref().child('Sunday');
+                sunday.child("11pm").set(this.value);
+                const sun12am = document.getElementById('12amSun');
+                const dbSun12am = db.ref().child('Sunday');
+                sunday.child("12am").set(this.value);
+        }
     }
     //this.value="Lawrence";
     //alert(this.value)
@@ -402,7 +615,7 @@ function changeColor(obj_id) {
 
 
 var input = document.getElementById("fname");
-input.addEventListener("keyup", function(event) {
+input.addEventListener("keyup", function (event) {
     if (event.keyCode === 13) {
         event.preventDefault();
         document.getElementById("fname_button").click();
@@ -412,9 +625,9 @@ input.addEventListener("keyup", function(event) {
 function dispInfo() {
     var first = document.getElementById("fname").value;
     document.getElementById("info").innerHTML = first;
-    
-    
+
+
     db.ref('Names').set(first);
-    
-    
+
+
 }
