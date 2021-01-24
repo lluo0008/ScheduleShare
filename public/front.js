@@ -27,107 +27,109 @@ function changeColor(obj_id) {
         const daysOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
         //Monday
 
+        const mon8am = document.getElementById('8amMon');
+        const dbMon8am = db.ref().child('Monday');
+        const mon9am = document.getElementById('9amMon');
+        const dbMon9am = db.ref().child('Monday');
+        const mon10am = document.getElementById('10amMon');
+        const dbMon10am = db.ref().child('Monday');
+        const mon11am = document.getElementById('11amMon');
+        const dbMon11am = db.ref().child('Monday');
+        const mon12pm = document.getElementById('12pmMon');
+        const dbMon12pm = db.ref().child('Monday');
+        const mon1pm = document.getElementById('1pmMon');
+        const dbMon1pm = db.ref().child('Monday');
+        const mon2pm = document.getElementById('2pmMon');
+        const dbMon2pm = db.ref().child('Monday');
+        const mon3pm = document.getElementById('3pmMon');
+        const dbMon3pm = db.ref().child('Monday');
+        const mon4pm = document.getElementById('4pmMon');
+        const dbMon4pm = db.ref().child('Monday');
+        const mon5pm = document.getElementById('5pmMon');
+        const dbMon5pm = db.ref().child('Monday');
+        const mon6pm = document.getElementById('6pmMon');
+        const dbMon6pm = db.ref().child('Monday');
+        const mon7pm = document.getElementById('7pmMon');
+        const dbMon7pm = db.ref().child('Monday');
+        const mon8pm = document.getElementById('8pmMon');
+        const dbMon8pm = db.ref().child('Monday');
+        const mon9pm = document.getElementById('9pmMon');
+        const dbMon9pm = db.ref().child('Monday');
+        const mon10pm = document.getElementById('10pmMon');
+        const dbMon10pm = db.ref().child('Monday');
+        const mon11pm = document.getElementById('11pmMon');
+        const dbMon11pm = db.ref().child('Monday');
+        const mon12am = document.getElementById('12amMon');
+        const dbMon12am = db.ref().child('Monday');
 
+        console.log(this.id);
+        
         switch (this.id) {
             case "8amMon":
-                const mon8am = document.getElementById('8amMon');
-                const dbMon8am = db.ref().child('Monday');
                 monday.child("8am").set(this.value);
                 break;
 
             case "9amMon":
-                const mon9am = document.getElementById('9amMon');
-                const dbMon9am = db.ref().child('Monday');
                 monday.child("9am").set(this.value);
                 break;
 
             case "10amMon":
-                const mon10am = document.getElementById('10amMon');
-                const dbMon10am = db.ref().child('Monday');
                 monday.child("10am").set(this.value);
                 break;
 
             case "11amMon":
-                const mon11am = document.getElementById('11amMon');
-                const dbMon11am = db.ref().child('Monday');
                 monday.child("11am").set(this.value);
                 break;
 
             case "12pmMon":
-                const mon12pm = document.getElementById('12pmMon');
-                const dbMon12pm = db.ref().child('Monday');
                 monday.child("12pm").set(this.value);
                 break;
 
             case "1pmMon":
-                const mon1pm = document.getElementById('1pmMon');
-                const dbMon1pm = db.ref().child('Monday');
                 monday.child("1pm").set(this.value);
                 break;
 
             case "2pmMon":
-                const mon2pm = document.getElementById('2pmMon');
-                const dbMon2pm = db.ref().child('Monday');
                 monday.child("2pm").set(this.value);
                 break;
 
             case "3pmMon":
-                const mon3pm = document.getElementById('3pmMon');
-                const dbMon3pm = db.ref().child('Monday');
                 monday.child("3pm").set(this.value);
                 break;
 
             case "4pmMon":
-                const mon4pm = document.getElementById('4pmMon');
-                const dbMon4pm = db.ref().child('Monday');
                 monday.child("4pm").set(this.value);
                 break;
 
             case "5pmMon":
-                const mon5pm = document.getElementById('5pmMon');
-                const dbMon5pm = db.ref().child('Monday');
                 monday.child("5pm").set(this.value);
                 break;
 
             case "6pmMon":
-                const mon6pm = document.getElementById('6pmMon');
-                const dbMon6pm = db.ref().child('Monday');
                 monday.child("6pm").set(this.value);
                 break;
 
             case "7pmMon":
-                const mon7pm = document.getElementById('7pmMon');
-                const dbMon7pm = db.ref().child('Monday');
                 monday.child("7pm").set(this.value);
                 break;
 
             case "8pmMon":
-                const mon8pm = document.getElementById('8pmMon');
-                const dbMon8pm = db.ref().child('Monday');
                 monday.child("8pm").set(this.value);
                 break;
 
             case "9pmMon":
-                const mon9pm = document.getElementById('9pmMon');
-                const dbMon9pm = db.ref().child('Monday');
                 monday.child("9pm").set(this.value);
                 break;
 
             case "10pmMon":
-                const mon10pm = document.getElementById('10pmMon');
-                const dbMon10pm = db.ref().child('Monday');
                 monday.child("10pm").set(this.value);
                 break;
 
             case "11pmMon":
-                const mon11pm = document.getElementById('11pmMon');
-                const dbMon11pm = db.ref().child('Monday');
                 monday.child("11pm").set(this.value);
                 break;
 
             case "12amMon":
-                const mon12am = document.getElementById('12amMon');
-                const dbMon12am = db.ref().child('Monday');
                 monday.child("12am").set(this.value);
                 break;
 
