@@ -19,7 +19,22 @@ function changeColor(obj_id) {
     //alert(this.value)
 }
 
+
+
+    var input = document.getElementById("fname");
+    input.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+            event.preventDefault();
+            document.getElementById("fname_button").click();
+        }
+    });
+
 function dispInfo() {
     var first = document.getElementById("fname").value;
     document.getElementById("info").innerHTML = first;
+    
+    
+
+    
+    
 }
