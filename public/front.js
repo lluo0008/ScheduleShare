@@ -73,8 +73,8 @@ function changeColor(obj_id) {
         const mon11pm = document.getElementById('11pmMon');
         const dbMon11pm = db.ref().child('Monday');
         monday.child("11pm").set(this.value);
-        const mon12pm = document.getElementById('12amMon');
-        const dbMon12pm = db.ref().child('Monday');
+        const mon12am = document.getElementById('12amMon');
+        const dbMon12am = db.ref().child('Monday');
         monday.child("12am").set(this.value);
 
         //Tuesday
@@ -84,7 +84,7 @@ function changeColor(obj_id) {
         const tue9am = document.getElementById('9amTue');
         const dbTue9am = db.ref().child('Tuesday');
         tuesday.child("9am").set(this.value);
-        const mon10am = document.getElementById('10amTue');
+        const tue10am = document.getElementById('10amTue');
         const dbTue10am = db.ref().child('Tuesday');
         tuesday.child("10am").set(this.value);
         const tue11am = document.getElementById('11amTue');
@@ -126,8 +126,8 @@ function changeColor(obj_id) {
         const tue11pm = document.getElementById('11pmTue');
         const dbTue11pm = db.ref().child('Tuesday');
         tuesday.child("11pm").set(this.value);
-        const tue12pm = document.getElementById('12amTue');
-        const dbTue12pm = db.ref().child('Tuesday');
+        const tue12am = document.getElementById('12amTue');
+        const dbTue12am = db.ref().child('Tuesday');
         tuesday.child("12am").set(this.value);
 
         //Wednesday
@@ -179,8 +179,8 @@ function changeColor(obj_id) {
         const wed11pm = document.getElementById('11pmWed');
         const dbWed11pm = db.ref().child('Wednesday');
         wednesday.child("11pm").set(this.value);
-        const wed12pm = document.getElementById('12amWed');
-        const dbWed12pm = db.ref().child('Wednesday');
+        const wed12am = document.getElementById('12amWed');
+        const dbWed12am = db.ref().child('Wednesday');
         wednesday.child("12am").set(this.value);
 
         //Thursday
@@ -232,8 +232,8 @@ function changeColor(obj_id) {
         const thu11pm = document.getElementById('11pmThu');
         const dbThu11pm = db.ref().child('Thursday');
         thursday.child("11pm").set(this.value);
-        const thu12pm = document.getElementById('12amThu');
-        const dbThu12pm = db.ref().child('Thursday');
+        const thu12am = document.getElementById('12amThu');
+        const dbThu12am = db.ref().child('Thursday');
         thursday.child("12am").set(this.value);
 
         //Friday
@@ -285,8 +285,8 @@ function changeColor(obj_id) {
         const fri11pm = document.getElementById('11pmFri');
         const dbFri11pm = db.ref().child('Friday');
         friday.child("11pm").set(this.value);
-        const fri12pm = document.getElementById('12amFri');
-        const dbFri12pm = db.ref().child('Friday');
+        const fri12am = document.getElementById('12amFri');
+        const dbFri12am = db.ref().child('Friday');
         friday.child("12am").set(this.value);
 
         //Saturday
@@ -338,8 +338,8 @@ function changeColor(obj_id) {
         const sat11pm = document.getElementById('11pmSat');
         const dbSat11pm = db.ref().child('Saturday');
         saturday.child("11pm").set(this.value);
-        const sat12pm = document.getElementById('12amSat');
-        const dbSat12pm = db.ref().child('Saturday');
+        const sat12am = document.getElementById('12amSat');
+        const dbSat12am = db.ref().child('Saturday');
         saturday.child("12am").set(this.value);
 
         //Sunday
@@ -391,8 +391,8 @@ function changeColor(obj_id) {
         const sun11pm = document.getElementById('11pmSun');
         const dbSun11pm = db.ref().child('Sunday');
         sunday.child("11pm").set(this.value);
-        const sun12pm = document.getElementById('12amSun');
-        const dbSun12pm = db.ref().child('Sunday');
+        const sun12am = document.getElementById('12amSun');
+        const dbSun12am = db.ref().child('Sunday');
         sunday.child("12am").set(this.value);
     }
     //this.value="Lawrence";
@@ -401,13 +401,13 @@ function changeColor(obj_id) {
 
 
 
-    var input = document.getElementById("fname");
-    input.addEventListener("keyup", function(event) {
-        if (event.keyCode === 13) {
-            event.preventDefault();
-            document.getElementById("fname_button").click();
-        }
-    });
+var input = document.getElementById("fname");
+input.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("fname_button").click();
+    }
+});
 
 function dispInfo() {
     var first = document.getElementById("fname").value;
