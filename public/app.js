@@ -5,7 +5,18 @@ const mon9am = document.getElementById('9amMon');
 const mon10am = document.getElementById('10amMon');
 const mon11am = document.getElementById('11amMon');
 
+//get elements
 const monday = database.ref('Monday');
+
+//create references
+const dbMon8am = db.ref().child('Monday');
+
+
+//Sync changes
+dbMon8am.on('value', snap =>
+{
+    mon8am.innerHTML = JSON.stringify(snap.val());
+});
 
 
 addBtn.addEventListener('click', (e) =>
