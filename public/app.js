@@ -33,7 +33,8 @@ dbMon8am.on('value', snap =>
 
 dbMon9am.on('value', snap =>
 {
-    mon9am.innerHTML = JSON.stringify(snap.val());
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    mon9am.innerHTML = val["9am"];
 });
 
 
