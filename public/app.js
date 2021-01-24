@@ -7,6 +7,14 @@ const mon11am = document.getElementById('11amMon');
 
 const monday = database.ref('Monday');
 
+
+addBtn.addEventListener('click', (e) =>
+{
+    e.preventDefault();
+    
+    monday.child("8am").set(mon8am.value);
+});
+
 updateBtn.addEventListener('click', (e) =>
 {
     e.preventDefault();
