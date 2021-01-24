@@ -11,8 +11,7 @@ const monday = database.ref('Monday');
 addBtn.addEventListener('click', (e) =>
 {
     e.preventDefault();
-    
-    monday.child("8am").set(mon8am.value);
+    monday.child(mon8am.value).set(mon8am.value);
 });
 
 updateBtn.addEventListener('click', (e) =>
