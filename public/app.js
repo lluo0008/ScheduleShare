@@ -264,17 +264,614 @@ const dbSun10pm = db.ref().child('Sunday');
 const dbSun11pm = db.ref().child('Sunday');
 const dbSun12am = db.ref().child('Sunday');
 //Sync changes
+//Monday
 dbMon8am.on('value', snap =>
 {
     var val = JSON.parse(JSON.stringify(snap.val()));
-    mon8am.innerHTML = val["8am"];});
-
+    mon8am.innerHTML = val["8am"];
+});
 dbMon9am.on('value', snap =>
 {
     var val = JSON.parse(JSON.stringify(snap.val()));
     mon9am.innerHTML = val["9am"];
 });
+dbMon10am.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    mon10am.innerHTML = val["10am"];
+});
+dbMon11am.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    mon11am.innerHTML = val["11am"];
+});
+dbMon12pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    mon12pm.innerHTML = val["12pm"];
+});
+dbMon1pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    mon1pm.innerHTML = val["1pm"];
+});
+dbMon2pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    mon2pm.innerHTML = val["2pm"];
+});
+dbMon3pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    mon3pm.innerHTML = val["3pm"];
+});
+dbMon4pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    mon4pm.innerHTML = val["4pm"];
+});
+dbMon5pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    mon5pm.innerHTML = val["5pm"];
+});
+dbMon6pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    mon6pm.innerHTML = val["6pm"];
+});
+dbMon7pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    mon7pm.innerHTML = val["7pm"];
+});
+dbMon8pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    mon8pm.innerHTML = val["8pm"];
+});
+dbMon9pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    mon9pm.innerHTML = val["9pm"];
+});
+dbMon10pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    mon10pm.innerHTML = val["10pm"];
+});
+dbMon11pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    mon11pm.innerHTML = val["11pm"];
+});
+dbMon12am.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    mon12am.innerHTML = val["12am"];
+});
 
+//TUESDAY---------------------------------------------------------------------------------
+dbTue8am.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    tue8am.innerHTML = val["8am"];
+});
+dbTue9am.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    tue9am.innerHTML = val["9am"];
+});
+dbTue10am.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    tue10am.innerHTML = val["10am"];
+});
+dbTue11am.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    tue11am.innerHTML = val["11am"];
+});
+dbTue12pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    tue12pm.innerHTML = val["12pm"];
+});
+dbTue1pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    tue1pm.innerHTML = val["1pm"];
+});
+dbTue2pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    tue2pm.innerHTML = val["2pm"];
+});
+dbTue3pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    tue3pm.innerHTML = val["3pm"];
+});
+dbTue4pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    tue4pm.innerHTML = val["4pm"];
+});
+dbTue5pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    tue5pm.innerHTML = val["5pm"];
+});
+dbTue6pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    tue6pm.innerHTML = val["6pm"];
+});
+dbTue7pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    tue7pm.innerHTML = val["7pm"];
+});
+dbTue8pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    tue8pm.innerHTML = val["8pm"];
+});
+dbTue9pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    tue9pm.innerHTML = val["9pm"];
+});
+dbTue10pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    tue10pm.innerHTML = val["10pm"];
+});
+dbTue11pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    tue11pm.innerHTML = val["11pm"];
+});
+dbTue12am.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    tue12am.innerHTML = val["12am"];
+});
+
+//WEDNESDAY ---------------------------------------------------------------------------------
+dbWed8am.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    wed8am.innerHTML = val["8am"];
+});
+dbWed9am.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    wed9am.innerHTML = val["9am"];
+});
+dbWed10am.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    wed10am.innerHTML = val["10am"];
+});
+dbWed11am.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    wed11am.innerHTML = val["11am"];
+});
+dbWed12pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    wed12pm.innerHTML = val["12pm"];
+});
+dbWed1pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    wed1pm.innerHTML = val["1pm"];
+});
+dbWed2pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    wed2pm.innerHTML = val["2pm"];
+});
+dbWed3pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    wed3pm.innerHTML = val["3pm"];
+});
+dbWed4pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    wed4pm.innerHTML = val["4pm"];
+});
+dbWed5pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    wed5pm.innerHTML = val["5pm"];
+});
+dbWed6pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    wed6pm.innerHTML = val["6pm"];
+});
+dbWed7pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    wed7pm.innerHTML = val["7pm"];
+});
+dbWed8pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    wed8pm.innerHTML = val["8pm"];
+});
+dbWed9pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    wed9pm.innerHTML = val["9pm"];
+});
+dbWed10pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    wed10pm.innerHTML = val["10pm"];
+});
+dbWed11pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    wed11pm.innerHTML = val["11pm"];
+});
+dbWed12am.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    wed12am.innerHTML = val["12am"];
+});
+
+//THURSDAY-------------------------------------------------------------------------------------
+dbThu8am.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    thu8am.innerHTML = val["8am"];
+});
+dbThu9am.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    thu9am.innerHTML = val["9am"];
+});
+dbThu10am.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    thu10am.innerHTML = val["10am"];
+});
+dbThu11am.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    thu11am.innerHTML = val["11am"];
+});
+dbThu12pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    thu12pm.innerHTML = val["12pm"];
+});
+dbThu1pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    thu1pm.innerHTML = val["1pm"];
+});
+dbThu2pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    thu2pm.innerHTML = val["2pm"];
+});
+dbThu3pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    thu3pm.innerHTML = val["3pm"];
+});
+dbThu4pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    thu4pm.innerHTML = val["4pm"];
+});
+dbThu5pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    thu5pm.innerHTML = val["5pm"];
+});
+dbThu6pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    thu6pm.innerHTML = val["6pm"];
+});
+dbThu7pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    thu7pm.innerHTML = val["7pm"];
+});
+dbThu8pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    thu8pm.innerHTML = val["8pm"];
+});
+dbThu9pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    thu9pm.innerHTML = val["9pm"];
+});
+dbThu10pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    thu10pm.innerHTML = val["10pm"];
+});
+dbThu11pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    thu11pm.innerHTML = val["11pm"];
+});
+dbThu12am.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    thu12am.innerHTML = val["12am"];
+});
+
+//FRIDAY--------------------------------------------------------------------------------------
+dbFri8am.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    fri8am.innerHTML = val["8am"];
+});
+dbFri9am.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    fri9am.innerHTML = val["9am"];
+});
+dbFri10am.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    fri10am.innerHTML = val["10am"];
+});
+dbFri11am.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    fri11am.innerHTML = val["11am"];
+});
+dbFri12pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    fri12pm.innerHTML = val["12pm"];
+});
+dbFri1pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    fri1pm.innerHTML = val["1pm"];
+});
+dbFri2pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    fri2pm.innerHTML = val["2pm"];
+});
+dbFri3pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    fri3pm.innerHTML = val["3pm"];
+});
+dbFri4pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    fri4pm.innerHTML = val["4pm"];
+});
+dbFri5pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    fri5pm.innerHTML = val["5pm"];
+});
+dbFri6pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    fri6pm.innerHTML = val["6pm"];
+});
+dbFri7pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    fri7pm.innerHTML = val["7pm"];
+});
+dbFri8pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    fri8pm.innerHTML = val["8pm"];
+});
+dbFri9pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    fri9pm.innerHTML = val["9pm"];
+});
+dbFri10pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    fri10pm.innerHTML = val["10pm"];
+});
+dbFri11pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    fri11pm.innerHTML = val["11pm"];
+});
+dbFri12am.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    fri12am.innerHTML = val["12am"];
+});
+
+//SATURDAY--------------------------------------------------------------------------------------
+dbSat8am.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    sat8am.innerHTML = val["8am"];
+});
+dbSat9am.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    sat9am.innerHTML = val["9am"];
+});
+dbSat10am.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    sat10am.innerHTML = val["10am"];
+});
+dbSat11am.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    sat11am.innerHTML = val["11am"];
+});
+dbSat12pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    sat12pm.innerHTML = val["12pm"];
+});
+dbSat1pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    sat1pm.innerHTML = val["1pm"];
+});
+dbSat2pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    sat2pm.innerHTML = val["2pm"];
+});
+dbSat3pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    sat3pm.innerHTML = val["3pm"];
+});
+dbSat4pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    sat4pm.innerHTML = val["4pm"];
+});
+dbSat5pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    sat5pm.innerHTML = val["5pm"];
+});
+dbSat6pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    sat6pm.innerHTML = val["6pm"];
+});
+dbSat7pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    sat7pm.innerHTML = val["7pm"];
+});
+dbSat8pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    sat8pm.innerHTML = val["8pm"];
+});
+dbSat9pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    sat9pm.innerHTML = val["9pm"];
+});
+dbSat10pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    sat10pm.innerHTML = val["10pm"];
+});
+dbSat11pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    sat11pm.innerHTML = val["11pm"];
+});
+dbSat12am.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    sat12am.innerHTML = val["12am"];
+});
+
+//SUNDAY--------------------------------------------------------------------------------------
+dbSun8am.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    sun8am.innerHTML = val["8am"];
+});
+dbSun9am.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    sun9am.innerHTML = val["9am"];
+});
+dbSun10am.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    sun10am.innerHTML = val["10am"];
+});
+dbSun11am.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    sun11am.innerHTML = val["11am"];
+});
+dbSun12pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    sun12pm.innerHTML = val["12pm"];
+});
+dbSun1pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    sun1pm.innerHTML = val["1pm"];
+});
+dbSun2pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    sun2pm.innerHTML = val["2pm"];
+});
+dbSun3pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    sun3pm.innerHTML = val["3pm"];
+});
+dbSun4pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    sun4pm.innerHTML = val["4pm"];
+});
+dbSun5pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    sun5pm.innerHTML = val["5pm"];
+});
+dbSun6pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    sun6pm.innerHTML = val["6pm"];
+});
+dbSun7pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    sun7pm.innerHTML = val["7pm"];
+});
+dbSun8pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    sun8pm.innerHTML = val["8pm"];
+});
+dbSun9pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    sun9pm.innerHTML = val["9pm"];
+});
+dbSun10pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    sun10pm.innerHTML = val["10pm"];
+});
+dbSun11pm.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    sun11pm.innerHTML = val["11pm"];
+});
+dbSun12am.on('value', snap =>
+{
+    var val = JSON.parse(JSON.stringify(snap.val()));
+    sun12am.innerHTML = val["12am"];
+});
 
 // addBtn.addEventListener('click', (e) =>
 // {
