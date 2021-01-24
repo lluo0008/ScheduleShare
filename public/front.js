@@ -453,57 +453,109 @@ function changeColor(obj_id) {
 
 
                 //Friday
+            case "8amFri":
                 const fri8am = document.getElementById('8amFri');
                 const dbFri8am = db.ref().child('Friday');
                 friday.child("8am").set(this.value);
+                break;
+
+                case "9amFri":
                 const fri9am = document.getElementById('9amFri');
                 const dbFri9am = db.ref().child('Friday');
                 friday.child("9am").set(this.value);
+                break;
+
+                case "9amFri":
                 const fri10am = document.getElementById('10amFri');
                 const dbFri10am = db.ref().child('Friday');
                 friday.child("10am").set(this.value);
+                break;
+
+                case "9amFri":
                 const fri11am = document.getElementById('11amFri');
                 const dbFri11am = db.ref().child('Friday');
                 friday.child("11am").set(this.value);
+                break;
+
+                case "9amFri":
                 const fri12pm = document.getElementById('12pmFri');
                 const dbFri12pm = db.ref().child('Friday');
                 friday.child("12pm").set(this.value);
+                break;
+
+                case "9amFri":
                 const fri1pm = document.getElementById('1pmFri');
                 const dbFri1pm = db.ref().child('Friday');
                 friday.child("1pm").set(this.value);
+                break;
+
+                case "9amFri":
                 const fri2pm = document.getElementById('2pmFri');
                 const dbFri2pm = db.ref().child('Friday');
                 friday.child("2pm").set(this.value);
+                break;
+
+                case "9amFri":
                 const fri3pm = document.getElementById('3pmFri');
                 const dbFri3pm = db.ref().child('Friday');
                 friday.child("3pm").set(this.value);
+                break;
+
+                case "9amFri":
                 const fri4pm = document.getElementById('4pmFri');
                 const dbFri4pm = db.ref().child('Friday');
                 friday.child("4pm").set(this.value);
+                break;
+
+                case "9amFri":
                 const fri5pm = document.getElementById('5pmFri');
                 const dbFri5pm = db.ref().child('Friday');
                 friday.child("5pm").set(this.value);
+                break;
+
+                case "9amFri":
                 const fri6pm = document.getElementById('6pmFri');
                 const dbFri6pm = db.ref().child('Friday');
                 friday.child("6pm").set(this.value);
+                break;
+
+                case "9amFri":
                 const fri7pm = document.getElementById('7pmFri');
                 const dbFri7pm = db.ref().child('Friday');
                 friday.child("7pm").set(this.value);
+                break;
+
+                case "9amFri":
                 const fri8pm = document.getElementById('8pmFri');
                 const dbFri8pm = db.ref().child('Friday');
                 friday.child("8pm").set(this.value);
+                break;
+
+                case "9amFri":
                 const fri9pm = document.getElementById('9pmFri');
                 const dbFri9pm = db.ref().child('Friday');
                 friday.child("9pm").set(this.value);
+                break;
+
+                case "9amFri":
                 const fri10pm = document.getElementById('10pmFri');
                 const dbFri10pm = db.ref().child('Friday');
                 friday.child("10pm").set(this.value);
+                break;
+
+                case "9amFri":
                 const fri11pm = document.getElementById('11pmFri');
                 const dbFri11pm = db.ref().child('Friday');
                 friday.child("11pm").set(this.value);
+                break;
+
+                case "9amFri":
                 const fri12am = document.getElementById('12amFri');
                 const dbFri12am = db.ref().child('Friday');
                 friday.child("12am").set(this.value);
+                break;
+
+                
 
                 //Saturday
                 const sat8am = document.getElementById('8amSat');
