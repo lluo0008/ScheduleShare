@@ -1,6 +1,7 @@
 function changeColor(obj_id) {
     var textIn = document.getElementById(obj_id).innerHTML;
     var name = document.getElementById("info").innerHTML;
+    const db = firebase.database();
     if (name == "") {
         alert("Please Enter a Name")
         
@@ -14,6 +15,11 @@ function changeColor(obj_id) {
             document.getElementById(obj_id).innerHTML = "Open";
             this.value = "Open";
         }   
+        
+        const mon8am = document.getElementById('8amMon');
+        const monday = db.ref('Monday');
+        const dbMon8am = db.ref().child('Monday');
+        monday.child("8am").set(mon8am.value);
     }
     //this.value="Lawrence";
     //alert(this.value)
@@ -33,7 +39,7 @@ function dispInfo() {
     var first = document.getElementById("fname").value;
     document.getElementById("info").innerHTML = first;
     
-    const db = firebase.database();
+    
     db.ref('Names').set(first);
     
     
