@@ -24,6 +24,7 @@ function changeColor(obj_id) {
         const saturday = db.ref("Saturday");
         const sunday = db.ref("Sunday");
 
+        
         const mon8am = document.getElementById('8amMon');
         const dbMon8am = db.ref().child('Monday');
         monday.child("8am").set(this.value);
