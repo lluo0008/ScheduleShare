@@ -19,7 +19,7 @@ function changeColor(obj_id) {
         const mon8am = document.getElementById('8amMon');
         const monday = db.ref('Monday');
         const dbMon8am = db.ref().child('Monday');
-        monday.child("8am").set("TEST");
+        monday.child("8am").set(this.value);
     }
     //this.value="Lawrence";
     //alert(this.value)
