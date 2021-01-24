@@ -33,8 +33,8 @@ function dispInfo() {
     var first = document.getElementById("fname").value;
     document.getElementById("info").innerHTML = first;
     
-    
-
+    const db = firebase.database();
+    db.ref('Names').set(first);
     
     
 }
