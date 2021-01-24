@@ -16,10 +16,21 @@ function changeColor(obj_id) {
             this.value = "Open";
         }   
 
-        const mon8am = document.getElementById('8amMon');
         const monday = db.ref('Monday');
+        const tuesday = db.ref("Tuesday");
+        const wednesday = db.ref("Wednesday");
+        const thursday = db.ref("Thursday");
+        const friday = db.ref("Friday");
+        const saturday = db.ref("Saturday");
+        const sunday = db.ref("Sunday");
+
+        const mon8am = document.getElementById('8amMon');
         const dbMon8am = db.ref().child('Monday');
         monday.child("8am").set(this.value);
+
+        const mon9am = document.getElementById('9amMon');
+        const dbMon9am = db.ref().child('Monday');
+        monday.child("9am").set(this.value);
     }
     //this.value="Lawrence";
     //alert(this.value)
