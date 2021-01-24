@@ -2,8 +2,8 @@ function changeColor(obj_id) {
     var textIn = document.getElementById(obj_id).innerHTML;
     var name = document.getElementById("info").innerHTML;
     const db = firebase.database();
-    console.log(this.id);
-    
+    console.log(obj_id);
+
     if (name == "") {
         alert("Please Enter a Name")
 
