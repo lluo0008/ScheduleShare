@@ -2,7 +2,7 @@ function changeColor(obj_id) {
     var textIn = document.getElementById(obj_id).innerHTML;
     var name = document.getElementById("info").innerHTML;
     const db = firebase.database();
-    console.log(obj_id);
+    
 
     if (name == "") {
         alert("Please Enter a Name")
@@ -66,7 +66,7 @@ function changeColor(obj_id) {
 
         
 
-        switch (this.id) {
+        switch (obj_id) {
             case "8amMon":
                 monday.child("8am").set(this.value);
                 break;
