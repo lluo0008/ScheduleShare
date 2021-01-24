@@ -137,11 +137,132 @@ const sunday = db.ref("Sunday");
 
 
 //create references
+//Monday
 const dbMon8am = db.ref().child('Monday');
 const dbMon9am = db.ref().child('Monday');
-
+const dbMon10am = db.ref().child('Monday');
+const dbMon11am = db.ref().child('Monday');
+const dbMon12pm = db.ref().child('Monday');
+const dbMon1pm = db.ref().child('Monday');
+const dbMon2pm = db.ref().child('Monday');
+const dbMon3pm = db.ref().child('Monday');
+const dbMon4pm = db.ref().child('Monday');
+const dbMon5pm = db.ref().child('Monday');
+const dbMon6pm = db.ref().child('Monday');
+const dbMon7pm = db.ref().child('Monday');
+const dbMon8pm = db.ref().child('Monday');
+const dbMon9pm = db.ref().child('Monday');
+const dbMon10pm = db.ref().child('Monday');
+const dbMon11pm = db.ref().child('Monday');
+const dbMon12am = db.ref().child('Monday');
+//Tuesday
 const dbTue8am = db.ref().child('Tuesday');
-
+const dbTue9am = db.ref().child('Tuesday');
+const dbTue10am = db.ref().child('Tuesday');
+const dbTue11am = db.ref().child('Tuesday');
+const dbTue12pm = db.ref().child('Tuesday');
+const dbTue1pm = db.ref().child('Tuesday');
+const dbTue2pm = db.ref().child('Tuesday');
+const dbTue3pm = db.ref().child('Tuesday');
+const dbTue4pm = db.ref().child('Tuesday');
+const dbTue5pm = db.ref().child('Tuesday');
+const dbTue6pm = db.ref().child('Tuesday');
+const dbTue7pm = db.ref().child('Tuesday');
+const dbTue8pm = db.ref().child('Tuesday');
+const dbTue9pm = db.ref().child('Tuesday');
+const dbTue10pm = db.ref().child('Tuesday');
+const dbTue11pm = db.ref().child('Tuesday');
+const dbTue12am = db.ref().child('Tuesday');
+//Wednesday
+const dbWed8am = db.ref().child('Wednesday');
+const dbWed9am = db.ref().child('Wednesday');
+const dbWed10am = db.ref().child('Wednesday');
+const dbWed11am = db.ref().child('Wednesday');
+const dbWed12pm = db.ref().child('Wednesday');
+const dbWed1pm = db.ref().child('Wednesday');
+const dbWed2pm = db.ref().child('Wednesday');
+const dbWed3pm = db.ref().child('Wednesday');
+const dbWed4pm = db.ref().child('Wednesday');
+const dbWed5pm = db.ref().child('Wednesday');
+const dbWed6pm = db.ref().child('Wednesday');
+const dbWed7pm = db.ref().child('Wednesday');
+const dbWed8pm = db.ref().child('Wednesday');
+const dbWed9pm = db.ref().child('Wednesday');
+const dbWed10pm = db.ref().child('Wednesday');
+const dbWed11pm = db.ref().child('Wednesday');
+const dbWed12am = db.ref().child('Wednesday');
+//Thursday
+const dbThu8am = db.ref().child('Thursday');
+const dbThu9am = db.ref().child('Thursday');
+const dbThu10am = db.ref().child('Thursday');
+const dbThu11am = db.ref().child('Thursday');
+const dbThu12pm = db.ref().child('Thursday');
+const dbThu1pm = db.ref().child('Thursday');
+const dbThu2pm = db.ref().child('Thursday');
+const dbThu3pm = db.ref().child('Thursday');
+const dbThu4pm = db.ref().child('Thursday');
+const dbThu5pm = db.ref().child('Thursday');
+const dbThu6pm = db.ref().child('Thursday');
+const dbThu7pm = db.ref().child('Thursday');
+const dbThu8pm = db.ref().child('Thursday');
+const dbThu9pm = db.ref().child('Thursday');
+const dbThu10pm = db.ref().child('Thursday');
+const dbThu11pm = db.ref().child('Thursday');
+const dbThu12am = db.ref().child('Thursday');
+//Friday
+const dbFri8am = db.ref().child('Friday');
+const dbFri9am = db.ref().child('Friday');
+const dbFri10am = db.ref().child('Friday');
+const dbFri11am = db.ref().child('Friday');
+const dbFri12pm = db.ref().child('Friday');
+const dbFri1pm = db.ref().child('Friday');
+const dbFri2pm = db.ref().child('Friday');
+const dbFri3pm = db.ref().child('Friday');
+const dbFri4pm = db.ref().child('Friday');
+const dbFri5pm = db.ref().child('Friday');
+const dbFri6pm = db.ref().child('Friday');
+const dbFri7pm = db.ref().child('Friday');
+const dbFri8pm = db.ref().child('Friday');
+const dbFri9pm = db.ref().child('Friday');
+const dbFri10pm = db.ref().child('Friday');
+const dbFri11pm = db.ref().child('Friday');
+const dbFri12am = db.ref().child('Friday');
+//Saturday
+const dbSat8am = db.ref().child('Saturday');
+const dbSat9am = db.ref().child('Saturday');
+const dbSat10am = db.ref().child('Saturday');
+const dbSat11am = db.ref().child('Saturday');
+const dbSat12pm = db.ref().child('Saturday');
+const dbSat1pm = db.ref().child('Saturday');
+const dbSat2pm = db.ref().child('Saturday');
+const dbSat3pm = db.ref().child('Saturday');
+const dbSat4pm = db.ref().child('Saturday');
+const dbSat5pm = db.ref().child('Saturday');
+const dbSat6pm = db.ref().child('Saturday');
+const dbSat7pm = db.ref().child('Saturday');
+const dbSat8pm = db.ref().child('Saturday');
+const dbSat9pm = db.ref().child('Saturday');
+const dbSat10pm = db.ref().child('Saturday');
+const dbSat11pm = db.ref().child('Saturday');
+const dbSat12am = db.ref().child('Saturday');
+//Sunday
+const dbSun8am = db.ref().child('Sunday');
+const dbSun9am = db.ref().child('Sunday');
+const dbSun10am = db.ref().child('Sunday');
+const dbSun11am = db.ref().child('Sunday');
+const dbSun12pm = db.ref().child('Sunday');
+const dbSun1pm = db.ref().child('Sunday');
+const dbSun2pm = db.ref().child('Sunday');
+const dbSun3pm = db.ref().child('Sunday');
+const dbSun4pm = db.ref().child('Sunday');
+const dbSun5pm = db.ref().child('Sunday');
+const dbSun6pm = db.ref().child('Sunday');
+const dbSun7pm = db.ref().child('Sunday');
+const dbSun8pm = db.ref().child('Sunday');
+const dbSun9pm = db.ref().child('Sunday');
+const dbSun10pm = db.ref().child('Sunday');
+const dbSun11pm = db.ref().child('Sunday');
+const dbSun12am = db.ref().child('Sunday');
 //Sync changes
 dbMon8am.on('value', snap =>
 {
