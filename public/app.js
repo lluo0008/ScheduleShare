@@ -15,7 +15,7 @@ const dbMon8am = db.ref().child('Monday');
 //Sync changes
 dbMon8am.on('value', snap =>
 {
-    mon8am.innerHTML = JSON.parse(snap.val());
+    mon8am.innerHTML = JSON.stringify(snap.val()).value;
 });
 
 mon8am.addEventListener('click', (e) =>
