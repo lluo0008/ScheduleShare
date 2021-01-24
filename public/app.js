@@ -23,10 +23,11 @@ const dbMon9am = db.ref().child('Monday');
 const dbTue8am = db.ref().child('Tuesday');
 
 //Sync changes
-var val = JSON.parse(JSON.stringify(snap.val()));
+
 
 dbMon8am.on('value', snap =>
 {
+    var val = JSON.parse(JSON.stringify(snap.val()));
     mon8am.innerHTML = val["8am"];
 });
 
