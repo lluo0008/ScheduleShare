@@ -15,9 +15,14 @@ const dbMon8am = db.ref().child('Monday');
 //Sync changes
 dbMon8am.on('value', snap =>
 {
-    mon8am.innerHTML = JSON.stringify(snap.val());
+    mon8am.innerHTML = snap.val();
 });
 
+mon8am.addEventListener('click', (e) =>
+{
+    e.preventDefault();
+    monday.child("8am").update(mon8am.value);
+});
 
 // addBtn.addEventListener('click', (e) =>
 // {
@@ -25,9 +30,3 @@ dbMon8am.on('value', snap =>
 //     monday.child("8am").set(mon8am.value);
 // });
 
-updateBtn.addEventListener('click', (e) =>
-{
-    e.preventDefault();
-    
-    monday.child("8am").update(mon8am.value);
-});
