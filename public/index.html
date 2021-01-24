@@ -1,223 +1,254 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Calendar Thing</title>
-        <style>
-            body {
-                background-color: #D5D3D0;
-            }
 
-            table {
-                font-family: arial, sans-serif;
-                
-                width: 100%
-            }
-            td, th {
-                border: 2px solid #dddddd;
-                text-align: center;
-                padding: 10px;
-            }
-            tr {
-                background-color: #dddddd;
-                text-align: middle;
-            }
-            
-            
-        </style>
-                
-        <script src="front.js" type="text/javascript" defer></script>
-        
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <title>Calendar Thing</title>
+    <style>
+        body {
+            background-color: #D5D3D0;
+        }
 
-        <h1>This is a Heading</h1>
-        <p>This is a paragraph.</p>
-        <table>
-            <tr>
-                <th>Time</th>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th>Wednesday</th>
-                <th>Thursday</th>
-                <th>Friday</th>
-                <th>Saturday</th>
-                <th>Sunday</th>
-            </tr>
-            <tr>
-                <td>8AM</td>
-                <td id = "8amMon" onClick = "changeColor(this.id)">Open</td>
-                <td id = "8amTue" onClick = "changeColor(this.id)">Open</td>
-                <td id = "8amWed" onClick = "changeColor(this.id)">Open</td>
-                <td id = "8amThu" onClick = "changeColor(this.id)">Open</td>
-                <td id = "8amFri" onClick = "changeColor(this.id)">Open</td>
-                <td id = "8amSat" onClick = "changeColor(this.id)">Open</td>
-                <td id = "8amSun" onClick = "changeColor(this.id)">Open</td>
-            </tr>
-            <tr>
-                <td>9AM</td>
-                <td id = "9amMon" onClick = "changeColor(this.id)">Open</td>
-                <td id = "9amTue" onClick = "changeColor(this.id)">Open</td>
-                <td id = "9amWed" onClick = "changeColor(this.id)">Open</td>
-                <td id = "9amThu" onClick = "changeColor(this.id)">Open</td>
-                <td id = "9amFri" onClick = "changeColor(this.id)">Open</td>
-                <td id = "9amSat" onClick = "changeColor(this.id)">Open</td>
-                <td id = "9amSun" onClick = "changeColor(this.id)">Open</td>
-            </tr>
-            <tr>
-                <td>10AM</td>
-                <td id = "10amMon" onClick = "changeColor(this.id)">Open</td>
-                <td id = "10amTue" onClick = "changeColor(this.id)">Open</td>
-                <td id = "10amWed" onClick = "changeColor(this.id)">Open</td>
-                <td id = "10amThu" onClick = "changeColor(this.id)">Open</td>
-                <td id = "10amFri" onClick = "changeColor(this.id)">Open</td>
-                <td id = "10amSat" onClick = "changeColor(this.id)">Open</td>
-                <td id = "10amSun" onClick = "changeColor(this.id)">Open</td>
-            </tr>
-            <tr>
-                <td>11AM</td>
-                <td id = "11amMon" onClick = "changeColor(this.id)">Open</td>
-                <td id = "11amTue" onClick = "changeColor(this.id)">Open</td>
-                <td id = "11amWed" onClick = "changeColor(this.id)">Open</td>
-                <td id = "11amThu" onClick = "changeColor(this.id)">Open</td>
-                <td id = "11amFri" onClick = "changeColor(this.id)">Open</td>
-                <td id = "11amSat" onClick = "changeColor(this.id)">Open</td>
-                <td id = "11amSun" onClick = "changeColor(this.id)">Open</td>
-            </tr>
-            <tr>
-                <td>12PM</td>
-                <td id = "12pmMon" onClick = "changeColor(this.id)">Open</td>
-                <td id = "12pmTue" onClick = "changeColor(this.id)">Open</td>
-                <td id = "12pmWed" onClick = "changeColor(this.id)">Open</td>
-                <td id = "12pmThu" onClick = "changeColor(this.id)">Open</td>
-                <td id = "12pmFri" onClick = "changeColor(this.id)">Open</td>
-                <td id = "12pmSat" onClick = "changeColor(this.id)">Open</td>
-                <td id = "12pmSun" onClick = "changeColor(this.id)">Open</td>
-            </tr>
-            <tr>
-                <td>1PM</td>
-                <td id = "1pmMon" onClick = "changeColor(this.id)">Open</td>
-                <td id = "1pmTue" onClick = "changeColor(this.id)">Open</td>
-                <td id = "1pmWed" onClick = "changeColor(this.id)">Open</td>
-                <td id = "1pmThu" onClick = "changeColor(this.id)">Open</td>
-                <td id = "1pmFri" onClick = "changeColor(this.id)">Open</td>
-                <td id = "1pmSat" onClick = "changeColor(this.id)">Open</td>
-                <td id = "1pmSun" onClick = "changeColor(this.id)">Open</td>
-            </tr>
-            <tr>
-                <td>2PM</td>
-                <td id = "2pmMon" onClick = "changeColor(this.id)">Open</td>
-                <td id = "2pmTue" onClick = "changeColor(this.id)">Open</td>
-                <td id = "2pmWed" onClick = "changeColor(this.id)">Open</td>
-                <td id = "2pmThu" onClick = "changeColor(this.id)">Open</td>
-                <td id = "2pmFri" onClick = "changeColor(this.id)">Open</td>
-                <td id = "2pmSat" onClick = "changeColor(this.id)">Open</td>
-                <td id = "2pmSun" onClick = "changeColor(this.id)">Open</td>
-            </tr>
-            <tr>
-                <td>3PM</td>
-                <td id = "3pmMon" onClick = "changeColor(this.id)">Open</td>
-                <td id = "3pmTue" onClick = "changeColor(this.id)">Open</td>
-                <td id = "3pmWed" onClick = "changeColor(this.id)">Open</td>
-                <td id = "3pmThu" onClick = "changeColor(this.id)">Open</td>
-                <td id = "3pmFri" onClick = "changeColor(this.id)">Open</td>
-                <td id = "3pmSat" onClick = "changeColor(this.id)">Open</td>
-                <td id = "3pmSun" onClick = "changeColor(this.id)">Open</td>
-            </tr>
-            <tr>
-                <td>4PM</td>
-                <td id = "4pmMon" onClick = "changeColor(this.id)">Open</td>
-                <td id = "4pmTue" onClick = "changeColor(this.id)">Open</td>
-                <td id = "4pmWed" onClick = "changeColor(this.id)">Open</td>
-                <td id = "4pmThu" onClick = "changeColor(this.id)">Open</td>
-                <td id = "4pmFri" onClick = "changeColor(this.id)">Open</td>
-                <td id = "4pmSat" onClick = "changeColor(this.id)">Open</td>
-                <td id = "4pmSun" onClick = "changeColor(this.id)">Open</td>
-            </tr>
-            <tr>
-                <td>5PM</td>
-                <td id = "5pmMon" onClick = "changeColor(this.id)">Open</td>
-                <td id = "5pmTue" onClick = "changeColor(this.id)">Open</td>
-                <td id = "5pmWed" onClick = "changeColor(this.id)">Open</td>
-                <td id = "5pmThu" onClick = "changeColor(this.id)">Open</td>
-                <td id = "5pmFri" onClick = "changeColor(this.id)">Open</td>
-                <td id = "5pmSat" onClick = "changeColor(this.id)">Open</td>
-                <td id = "5pmSun" onClick = "changeColor(this.id)">Open</td>
-            </tr>
-            <tr>
-                <td>6PM</td>
-                <td id = "6pmMon" onClick = "changeColor(this.id)">Open</td>
-                <td id = "6pmTue" onClick = "changeColor(this.id)">Open</td>
-                <td id = "6pmWed" onClick = "changeColor(this.id)">Open</td>
-                <td id = "6pmThu" onClick = "changeColor(this.id)">Open</td>
-                <td id = "6pmFri" onClick = "changeColor(this.id)">Open</td>
-                <td id = "6pmSat" onClick = "changeColor(this.id)">Open</td>
-                <td id = "6pmSun" onClick = "changeColor(this.id)">Open</td>
-            </tr>
-            <tr>
-                <td>7PM</td>
-                <td id = "7pmMon" onClick = "changeColor(this.id)">Open</td>
-                <td id = "7pmTue" onClick = "changeColor(this.id)">Open</td>
-                <td id = "7pmWed" onClick = "changeColor(this.id)">Open</td>
-                <td id = "7pmThu" onClick = "changeColor(this.id)">Open</td>
-                <td id = "7pmFri" onClick = "changeColor(this.id)">Open</td>
-                <td id = "7pmSat" onClick = "changeColor(this.id)">Open</td>
-                <td id = "7pmSun" onClick = "changeColor(this.id)">Open</td>
-            </tr>
-            <tr>
-                <td>8PM</td>
-                <td id = "8pmMon" onClick = "changeColor(this.id)">Open</td>
-                <td id = "8pmTue" onClick = "changeColor(this.id)">Open</td>
-                <td id = "8pmWed" onClick = "changeColor(this.id)">Open</td>
-                <td id = "8pmThu" onClick = "changeColor(this.id)">Open</td>
-                <td id = "8pmFri" onClick = "changeColor(this.id)">Open</td>
-                <td id = "8pmSat" onClick = "changeColor(this.id)">Open</td>
-                <td id = "8pmSun" onClick = "changeColor(this.id)">Open</td>
-            </tr>
-            <tr>
-                <td>9PM</td>
-                <td id = "9pmMon" onClick = "changeColor(this.id)">Open</td>
-                <td id = "9pmTue" onClick = "changeColor(this.id)">Open</td>
-                <td id = "9pmWed" onClick = "changeColor(this.id)">Open</td>
-                <td id = "9pmThu" onClick = "changeColor(this.id)">Open</td>
-                <td id = "9pmFri" onClick = "changeColor(this.id)">Open</td>
-                <td id = "9pmSat" onClick = "changeColor(this.id)">Open</td>
-                <td id = "9pmSun" onClick = "changeColor(this.id)">Open</td>
-            </tr>
-            <tr>
-                <td>10PM</td>
-                <td id = "10pmMon" onClick = "changeColor(this.id)">Open</td>
-                <td id = "10pmTue" onClick = "changeColor(this.id)">Open</td>
-                <td id = "10pmWed" onClick = "changeColor(this.id)">Open</td>
-                <td id = "10pmThu" onClick = "changeColor(this.id)">Open</td>
-                <td id = "10pmFri" onClick = "changeColor(this.id)">Open</td>
-                <td id = "10pmSat" onClick = "changeColor(this.id)">Open</td>
-                <td id = "10pmSun" onClick = "changeColor(this.id)">Open</td>
-            </tr>
-            <tr>
-                <td>11PM</td>
-                <td id = "11pmMon" onClick = "changeColor(this.id)">Open</td>
-                <td id = "11pmTue" onClick = "changeColor(this.id)">Open</td>
-                <td id = "11pmWed" onClick = "changeColor(this.id)">Open</td>
-                <td id = "11pmThu" onClick = "changeColor(this.id)">Open</td>
-                <td id = "11pmFri" onClick = "changeColor(this.id)">Open</td>
-                <td id = "11pmSat" onClick = "changeColor(this.id)">Open</td>
-                <td id = "11pmSun" onClick = "changeColor(this.id)">Open</td>
-            </tr>
-            <tr>
-                <td>12AM</td>
-                <td id = "12amMon" onClick = "changeColor(this.id)">Open</td>
-                <td id = "12amTue" onClick = "changeColor(this.id)">Open</td>
-                <td id = "12amWed" onClick = "changeColor(this.id)">Open</td>
-                <td id = "12amThu" onClick = "changeColor(this.id)">Open</td>
-                <td id = "12amFri" onClick = "changeColor(this.id)">Open</td>
-                <td id = "12amSat" onClick = "changeColor(this.id)">Open</td>
-                <td id = "12amSun" onClick = "changeColor(this.id)">Open</td>
-            </tr>
-            
-        </table>
-        
+        table {
+            font-family: arial, sans-serif;
+
+            width: 100%
+        }
+
+        td,
+        th {
+            border: 2px solid #dddddd;
+            text-align: center;
+            padding: 10px;
+        }
+
+        tr {
+            background-color: #dddddd;
+            text-align: middle;
+        }
+    </style>
+
+    <script src="front.js" type="text/javascript" defer></script>
+
+</head>
+
+<body>
+
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+    <table>
+        <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
+        </tr>
+        <tr>
+            <td>8AM</td>
+            <td id="8amMon" onClick="changeColor(this.id)">Open</td>
+            <td id="8amTue" onClick="changeColor(this.id)">Open</td>
+            <td id="8amWed" onClick="changeColor(this.id)">Open</td>
+            <td id="8amThu" onClick="changeColor(this.id)">Open</td>
+            <td id="8amFri" onClick="changeColor(this.id)">Open</td>
+            <td id="8amSat" onClick="changeColor(this.id)">Open</td>
+            <td id="8amSun" onClick="changeColor(this.id)">Open</td>
+        </tr>
+        <tr>
+            <td>9AM</td>
+            <td id="9amMon" onClick="changeColor(this.id)">Open</td>
+            <td id="9amTue" onClick="changeColor(this.id)">Open</td>
+            <td id="9amWed" onClick="changeColor(this.id)">Open</td>
+            <td id="9amThu" onClick="changeColor(this.id)">Open</td>
+            <td id="9amFri" onClick="changeColor(this.id)">Open</td>
+            <td id="9amSat" onClick="changeColor(this.id)">Open</td>
+            <td id="9amSun" onClick="changeColor(this.id)">Open</td>
+        </tr>
+        <tr>
+            <td>10AM</td>
+            <td id="10amMon" onClick="changeColor(this.id)">Open</td>
+            <td id="10amTue" onClick="changeColor(this.id)">Open</td>
+            <td id="10amWed" onClick="changeColor(this.id)">Open</td>
+            <td id="10amThu" onClick="changeColor(this.id)">Open</td>
+            <td id="10amFri" onClick="changeColor(this.id)">Open</td>
+            <td id="10amSat" onClick="changeColor(this.id)">Open</td>
+            <td id="10amSun" onClick="changeColor(this.id)">Open</td>
+        </tr>
+        <tr>
+            <td>11AM</td>
+            <td id="11amMon" onClick="changeColor(this.id)">Open</td>
+            <td id="11amTue" onClick="changeColor(this.id)">Open</td>
+            <td id="11amWed" onClick="changeColor(this.id)">Open</td>
+            <td id="11amThu" onClick="changeColor(this.id)">Open</td>
+            <td id="11amFri" onClick="changeColor(this.id)">Open</td>
+            <td id="11amSat" onClick="changeColor(this.id)">Open</td>
+            <td id="11amSun" onClick="changeColor(this.id)">Open</td>
+        </tr>
+        <tr>
+            <td>12PM</td>
+            <td id="12pmMon" onClick="changeColor(this.id)">Open</td>
+            <td id="12pmTue" onClick="changeColor(this.id)">Open</td>
+            <td id="12pmWed" onClick="changeColor(this.id)">Open</td>
+            <td id="12pmThu" onClick="changeColor(this.id)">Open</td>
+            <td id="12pmFri" onClick="changeColor(this.id)">Open</td>
+            <td id="12pmSat" onClick="changeColor(this.id)">Open</td>
+            <td id="12pmSun" onClick="changeColor(this.id)">Open</td>
+        </tr>
+        <tr>
+            <td>1PM</td>
+            <td id="1pmMon" onClick="changeColor(this.id)">Open</td>
+            <td id="1pmTue" onClick="changeColor(this.id)">Open</td>
+            <td id="1pmWed" onClick="changeColor(this.id)">Open</td>
+            <td id="1pmThu" onClick="changeColor(this.id)">Open</td>
+            <td id="1pmFri" onClick="changeColor(this.id)">Open</td>
+            <td id="1pmSat" onClick="changeColor(this.id)">Open</td>
+            <td id="1pmSun" onClick="changeColor(this.id)">Open</td>
+        </tr>
+        <tr>
+            <td>2PM</td>
+            <td id="2pmMon" onClick="changeColor(this.id)">Open</td>
+            <td id="2pmTue" onClick="changeColor(this.id)">Open</td>
+            <td id="2pmWed" onClick="changeColor(this.id)">Open</td>
+            <td id="2pmThu" onClick="changeColor(this.id)">Open</td>
+            <td id="2pmFri" onClick="changeColor(this.id)">Open</td>
+            <td id="2pmSat" onClick="changeColor(this.id)">Open</td>
+            <td id="2pmSun" onClick="changeColor(this.id)">Open</td>
+        </tr>
+        <tr>
+            <td>3PM</td>
+            <td id="3pmMon" onClick="changeColor(this.id)">Open</td>
+            <td id="3pmTue" onClick="changeColor(this.id)">Open</td>
+            <td id="3pmWed" onClick="changeColor(this.id)">Open</td>
+            <td id="3pmThu" onClick="changeColor(this.id)">Open</td>
+            <td id="3pmFri" onClick="changeColor(this.id)">Open</td>
+            <td id="3pmSat" onClick="changeColor(this.id)">Open</td>
+            <td id="3pmSun" onClick="changeColor(this.id)">Open</td>
+        </tr>
+        <tr>
+            <td>4PM</td>
+            <td id="4pmMon" onClick="changeColor(this.id)">Open</td>
+            <td id="4pmTue" onClick="changeColor(this.id)">Open</td>
+            <td id="4pmWed" onClick="changeColor(this.id)">Open</td>
+            <td id="4pmThu" onClick="changeColor(this.id)">Open</td>
+            <td id="4pmFri" onClick="changeColor(this.id)">Open</td>
+            <td id="4pmSat" onClick="changeColor(this.id)">Open</td>
+            <td id="4pmSun" onClick="changeColor(this.id)">Open</td>
+        </tr>
+        <tr>
+            <td>5PM</td>
+            <td id="5pmMon" onClick="changeColor(this.id)">Open</td>
+            <td id="5pmTue" onClick="changeColor(this.id)">Open</td>
+            <td id="5pmWed" onClick="changeColor(this.id)">Open</td>
+            <td id="5pmThu" onClick="changeColor(this.id)">Open</td>
+            <td id="5pmFri" onClick="changeColor(this.id)">Open</td>
+            <td id="5pmSat" onClick="changeColor(this.id)">Open</td>
+            <td id="5pmSun" onClick="changeColor(this.id)">Open</td>
+        </tr>
+        <tr>
+            <td>6PM</td>
+            <td id="6pmMon" onClick="changeColor(this.id)">Open</td>
+            <td id="6pmTue" onClick="changeColor(this.id)">Open</td>
+            <td id="6pmWed" onClick="changeColor(this.id)">Open</td>
+            <td id="6pmThu" onClick="changeColor(this.id)">Open</td>
+            <td id="6pmFri" onClick="changeColor(this.id)">Open</td>
+            <td id="6pmSat" onClick="changeColor(this.id)">Open</td>
+            <td id="6pmSun" onClick="changeColor(this.id)">Open</td>
+        </tr>
+        <tr>
+            <td>7PM</td>
+            <td id="7pmMon" onClick="changeColor(this.id)">Open</td>
+            <td id="7pmTue" onClick="changeColor(this.id)">Open</td>
+            <td id="7pmWed" onClick="changeColor(this.id)">Open</td>
+            <td id="7pmThu" onClick="changeColor(this.id)">Open</td>
+            <td id="7pmFri" onClick="changeColor(this.id)">Open</td>
+            <td id="7pmSat" onClick="changeColor(this.id)">Open</td>
+            <td id="7pmSun" onClick="changeColor(this.id)">Open</td>
+        </tr>
+        <tr>
+            <td>8PM</td>
+            <td id="8pmMon" onClick="changeColor(this.id)">Open</td>
+            <td id="8pmTue" onClick="changeColor(this.id)">Open</td>
+            <td id="8pmWed" onClick="changeColor(this.id)">Open</td>
+            <td id="8pmThu" onClick="changeColor(this.id)">Open</td>
+            <td id="8pmFri" onClick="changeColor(this.id)">Open</td>
+            <td id="8pmSat" onClick="changeColor(this.id)">Open</td>
+            <td id="8pmSun" onClick="changeColor(this.id)">Open</td>
+        </tr>
+        <tr>
+            <td>9PM</td>
+            <td id="9pmMon" onClick="changeColor(this.id)">Open</td>
+            <td id="9pmTue" onClick="changeColor(this.id)">Open</td>
+            <td id="9pmWed" onClick="changeColor(this.id)">Open</td>
+            <td id="9pmThu" onClick="changeColor(this.id)">Open</td>
+            <td id="9pmFri" onClick="changeColor(this.id)">Open</td>
+            <td id="9pmSat" onClick="changeColor(this.id)">Open</td>
+            <td id="9pmSun" onClick="changeColor(this.id)">Open</td>
+        </tr>
+        <tr>
+            <td>10PM</td>
+            <td id="10pmMon" onClick="changeColor(this.id)">Open</td>
+            <td id="10pmTue" onClick="changeColor(this.id)">Open</td>
+            <td id="10pmWed" onClick="changeColor(this.id)">Open</td>
+            <td id="10pmThu" onClick="changeColor(this.id)">Open</td>
+            <td id="10pmFri" onClick="changeColor(this.id)">Open</td>
+            <td id="10pmSat" onClick="changeColor(this.id)">Open</td>
+            <td id="10pmSun" onClick="changeColor(this.id)">Open</td>
+        </tr>
+        <tr>
+            <td>11PM</td>
+            <td id="11pmMon" onClick="changeColor(this.id)">Open</td>
+            <td id="11pmTue" onClick="changeColor(this.id)">Open</td>
+            <td id="11pmWed" onClick="changeColor(this.id)">Open</td>
+            <td id="11pmThu" onClick="changeColor(this.id)">Open</td>
+            <td id="11pmFri" onClick="changeColor(this.id)">Open</td>
+            <td id="11pmSat" onClick="changeColor(this.id)">Open</td>
+            <td id="11pmSun" onClick="changeColor(this.id)">Open</td>
+        </tr>
+        <tr>
+            <td>12AM</td>
+            <td id="12amMon" onClick="changeColor(this.id)">Open</td>
+            <td id="12amTue" onClick="changeColor(this.id)">Open</td>
+            <td id="12amWed" onClick="changeColor(this.id)">Open</td>
+            <td id="12amThu" onClick="changeColor(this.id)">Open</td>
+            <td id="12amFri" onClick="changeColor(this.id)">Open</td>
+            <td id="12amSat" onClick="changeColor(this.id)">Open</td>
+            <td id="12amSun" onClick="changeColor(this.id)">Open</td>
+        </tr>
+
+    </table>
 
 
-    </body>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyB_9VvMS_wcCjQYCGU5F-N5vKMY7xTYA-8",
+            authDomain: "shared-schedule.firebaseapp.com",
+            databaseURL: "https://shared-schedule-default-rtdb.firebaseio.com",
+            projectId: "shared-schedule",
+            storageBucket: "shared-schedule.appspot.com",
+            messagingSenderId: "944831696972",
+            appId: "1:944831696972:web:d4dac60e3eb5113fbd24e9",
+            measurementId: "G-2Z4S5NE6CP"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+    <script src="app.js"></script>
+</body>
+
 </html>
